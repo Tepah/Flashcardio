@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */; };
-		C12F3C4C2B0C080900AA7D60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C4B2B0C080900AA7D60 /* ContentView.swift */; };
 		C12F3C4E2B0C080A00AA7D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */; };
 		C12F3C512B0C080A00AA7D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F3C502B0C080A00AA7D60 /* Preview Assets.xcassets */; };
 		C12F3C5B2B0C080A00AA7D60 /* FlashcardioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C5A2B0C080A00AA7D60 /* FlashcardioTests.swift */; };
 		C12F3C652B0C080A00AA7D60 /* FlashcardioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C642B0C080A00AA7D60 /* FlashcardioUITests.swift */; };
 		C12F3C672B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C662B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift */; };
+		C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C732B0C098A00AA7D60 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		C12F3C462B0C080900AA7D60 /* Flashcardio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcardio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioApp.swift; sourceTree = "<group>"; };
-		C12F3C4B2B0C080900AA7D60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C12F3C502B0C080A00AA7D60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C12F3C562B0C080A00AA7D60 /* FlashcardioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		C12F3C602B0C080A00AA7D60 /* FlashcardioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F3C642B0C080A00AA7D60 /* FlashcardioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioUITests.swift; sourceTree = "<group>"; };
 		C12F3C662B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C12F3C732B0C098A00AA7D60 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */,
-				C12F3C4B2B0C080900AA7D60 /* ContentView.swift */,
 				C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */,
 				C12F3C4F2B0C080A00AA7D60 /* Preview Content */,
+				C12F3C732B0C098A00AA7D60 /* Main.swift */,
 			);
 			path = Flashcardio;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C12F3C4C2B0C080900AA7D60 /* ContentView.swift in Sources */,
+				C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */,
 				C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
