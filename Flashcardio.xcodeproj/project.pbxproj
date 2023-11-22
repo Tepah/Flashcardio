@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22E6EDBE2B0D8DAE00038BD5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6EDBD2B0D8DAE00038BD5 /* Card.swift */; };
+		22E6EDC02B0D8E0900038BD5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6EDBF2B0D8E0900038BD5 /* CardView.swift */; };
 		C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */; };
 		C12F3C4E2B0C080A00AA7D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */; };
 		C12F3C512B0C080A00AA7D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F3C502B0C080A00AA7D60 /* Preview Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22E6EDBD2B0D8DAE00038BD5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		22E6EDBF2B0D8E0900038BD5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C12F3C462B0C080900AA7D60 /* Flashcardio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcardio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioApp.swift; sourceTree = "<group>"; };
 		C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */,
 				C12F3C4F2B0C080A00AA7D60 /* Preview Content */,
 				C12F3C732B0C098A00AA7D60 /* Main.swift */,
+				22E6EDBD2B0D8DAE00038BD5 /* Card.swift */,
+				22E6EDBF2B0D8E0900038BD5 /* CardView.swift */,
 			);
 			path = Flashcardio;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */,
+				22E6EDBE2B0D8DAE00038BD5 /* Card.swift in Sources */,
+				22E6EDC02B0D8E0900038BD5 /* CardView.swift in Sources */,
 				C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

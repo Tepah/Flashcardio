@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Card: Codable {
+    let question: String
+    let answer: String
+    
+    static var example: Card {
+        Card(question: "Question", answer: "Answer")
+    }
+}
