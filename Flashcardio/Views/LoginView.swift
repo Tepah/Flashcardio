@@ -7,28 +7,62 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username: String = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                // Username Text Field
+                TextField("Email", text: $email)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                // Password Secure Field
+                SecureField("Password", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                Button("Login") {
+                    // Add your login logic here using the entered username and password
+                    print("Email: \(email), Password: \(password)")
+                }
+                .padding()
+                
+                HStack {
+                    Text("No account?")
+                    NavigationLink(destination: SignUpView()){
+                        Text("Sign up")
+                    }
+                }
+            }
+            .padding()
+        }
+    }
+}
+
+struct SignUpView: View {
+    @State private var email: String = ""
     @State private var password: String = ""
     
     var body: some View {
         VStack {
             // Username Text Field
-            TextField("Username", text: $username)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            TextField("Email", text: $email)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
             
             // Password Secure Field
             SecureField("Password", text: $password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
             
-            Button("Login") {
+            Button("Sign up") {
                 // Add your login logic here using the entered username and password
-                print("Username: \(username), Password: \(password)")
+                print("Email: \(email), Password: \(password)")
             }
             .padding()
         }
-        .padding()
     }
 }
 
