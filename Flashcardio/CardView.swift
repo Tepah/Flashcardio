@@ -66,9 +66,6 @@ struct CardView: View {
                 }
                 .onEnded { _ in
                     if abs(self.offset.width) > 100 {
-                        if self.offset.width < 0 {
-                            self.feedback.notificationOccurred(.error)
-                        }
                         self.removal?()
                     } else {
                         self.offset = .zero
