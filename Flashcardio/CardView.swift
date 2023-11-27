@@ -68,7 +68,7 @@ struct CardView: View {
                     if abs(self.offset.width) > 100 {
                         self.removal?()
                     } else {
-                        self.offset = .zero
+                        self.offset = CGSize.zero
                     }
                     
                 }

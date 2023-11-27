@@ -26,9 +26,7 @@ struct CardsView: View {
                 ZStack {
                     ForEach(0 ..< cards.count, id: \.self) { index in
                         CardView(card: cards[index]) {
-                            withAnimation {
-                                self.removeCard(at: index)
-                            }
+                            self.removeCard(at: index)
                         }
                         .stacked(at: index, in: self.cards.count)
                         .allowsHitTesting(index == self.cards.count - 1)
