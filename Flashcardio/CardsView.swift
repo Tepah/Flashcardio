@@ -18,7 +18,6 @@ struct CardsView: View {
     
     @State private var cards = [Card]()
     @State private var isActive = true
-    @State private var reuseCards = false
     @State private var showingEditScreen = false
     
     var body: some View {
@@ -28,11 +27,7 @@ struct CardsView: View {
                     ForEach(0 ..< cards.count, id: \.self) { index in
                         CardView(card: cards[index]) {
                             withAnimation {
-                                if reuseCards {
-                                    self.pushCardBack(at: index)
-                                } else {
-                                    self.removeCard(at: index)
-                                }
+                                self.removeCard(at: index)
                             }
                         }
                         .stacked(at: index, in: self.cards.count)
@@ -58,7 +53,6 @@ struct CardsView: View {
                     {
                         Image(systemName: "plus.circle")
                             .defaultButtonStyle()
-                            //.foregroundColor(.black)
                     }
                 }
                 Spacer()
@@ -78,16 +72,6 @@ struct CardsView: View {
         guard index >= 0 else { return }
         
         cards.remove(at: index)
-        
-        if cards.isEmpty {
-            isActive = false
-        }
-    }
-    
-    func pushCardBack(at index: Int) {
-        let reuseCard = cards.remove(at: index)
-        
-        cards.insert(reuseCard, at: 0)
         
         if cards.isEmpty {
             isActive = false
