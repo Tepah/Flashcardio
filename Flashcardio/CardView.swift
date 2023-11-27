@@ -10,10 +10,13 @@ import SwiftUI
 struct CardView: View {
     
     let card: Card
+    
+    var removal: (() -> Void)? = nil
 
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @State private var isShowingAnswer = false
     @State private var offset = CGSize.zero
+    @State private var feedback = UINotificationFeedbackGenerator()
     
     var body: some View {
         ZStack {
@@ -23,7 +26,7 @@ struct CardView: View {
                 .background(
                     differentiateWithoutColor ? nil :
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(offset.width > 0 ? Color.green : Color.red)
+                        .fill(Color.red)
                 )
                 .shadow(radius: 20)
             VStack {
@@ -59,11 +62,14 @@ struct CardView: View {
             DragGesture()
                 .onChanged { gesture in
                     self.offset = gesture.translation
+                    self.feedback.prepare()
                 }
                 .onEnded { _ in
                     if abs(self.offset.width) > 100 {
-                        // need to add logic to remove a card from deck or keep in deck
-                        // self.removal?()
+                        if self.offset.width < 0 {
+                            self.feedback.notificationOccurred(.error)
+                        }
+                        self.removal?()
                     } else {
                         self.offset = .zero
                     }

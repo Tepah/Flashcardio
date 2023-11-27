@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225D01B42B147151001A065A /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D01B32B147151001A065A /* CardsView.swift */; };
+		225D01B62B147167001A065A /* EditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D01B52B147167001A065A /* EditCardView.swift */; };
 		22E6EDBE2B0D8DAE00038BD5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6EDBD2B0D8DAE00038BD5 /* Card.swift */; };
 		22E6EDC02B0D8E0900038BD5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6EDBF2B0D8E0900038BD5 /* CardView.swift */; };
 		C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225D01B32B147151001A065A /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		225D01B52B147167001A065A /* EditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardView.swift; sourceTree = "<group>"; };
 		22E6EDBD2B0D8DAE00038BD5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		22E6EDBF2B0D8E0900038BD5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C12F3C462B0C080900AA7D60 /* Flashcardio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcardio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +108,8 @@
 				C12F3C732B0C098A00AA7D60 /* Main.swift */,
 				22E6EDBD2B0D8DAE00038BD5 /* Card.swift */,
 				22E6EDBF2B0D8E0900038BD5 /* CardView.swift */,
+				225D01B32B147151001A065A /* CardsView.swift */,
+				225D01B52B147167001A065A /* EditCardView.swift */,
 			);
 			path = Flashcardio;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225D01B62B147167001A065A /* EditCardView.swift in Sources */,
 				C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */,
+				225D01B42B147151001A065A /* CardsView.swift in Sources */,
 				22E6EDBE2B0D8DAE00038BD5 /* Card.swift in Sources */,
 				22E6EDC02B0D8E0900038BD5 /* CardView.swift in Sources */,
 				C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */,

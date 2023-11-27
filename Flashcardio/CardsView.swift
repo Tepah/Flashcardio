@@ -2,17 +2,130 @@
 //  CardsView.swift
 //  Flashcardio
 //
-//  Created by Justin Nguyen on 11/26/23.
+//  Created by Justin Nguyen on 11/25/23.
 //
 
 import SwiftUI
 
-struct CardsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension View{
+    func stacked(at position: Int, in total: Int) -> some View {
+        let offset = CGFloat(total - position)
+        return self.offset(CGSize(width: 0, height: offset * 10))
     }
 }
 
-#Preview {
-    CardsView()
+struct CardsView: View {
+    
+    @State private var cards = [Card]()
+    @State private var isActive = true
+    @State private var reuseCards = false
+    @State private var showingEditScreen = false
+    
+    var body: some View {
+        ZStack {
+            VStack {
+                ZStack {
+                    ForEach(0 ..< cards.count, id: \.self) { index in
+                        CardView(card: cards[index]) {
+                            withAnimation {
+                                if reuseCards {
+                                    self.pushCardBack(at: index)
+                                } else {
+                                    self.removeCard(at: index)
+                                }
+                            }
+                        }
+                        .stacked(at: index, in: self.cards.count)
+                        .allowsHitTesting(index == self.cards.count - 1)
+                    }
+                }
+                if cards.isEmpty {
+                    Button("Reset Cards", action: resetCards)
+                        .padding()
+                        .background(Color(hex: 0x565656))
+                        .foregroundColor(.white)
+                        .shadow(radius: 20)
+                        .clipShape(Capsule())
+                }
+            }
+            
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        self.showingEditScreen = true
+                    })
+                    {
+                        Image(systemName: "plus.circle")
+                            .defaultButtonStyle()
+                            //.foregroundColor(.black)
+                    }
+                }
+                Spacer()
+            }
+            .foregroundColor(.white)
+            .font(.largeTitle)
+            .padding()
+        }
+        .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
+            EditCardView()
+        }
+        .background(Color(hex: 0x2E3A31))
+        .onAppear(perform: resetCards)
+    }
+    
+    func removeCard(at index: Int) {
+        guard index >= 0 else { return }
+        
+        cards.remove(at: index)
+        
+        if cards.isEmpty {
+            isActive = false
+        }
+    }
+    
+    func pushCardBack(at index: Int) {
+        let reuseCard = cards.remove(at: index)
+        
+        cards.insert(reuseCard, at: 0)
+        
+        if cards.isEmpty {
+            isActive = false
+        }
+    }
+    
+    func resetCards() {
+        loadData()
+        isActive = true
+    }
+    
+    func loadData() {
+        if let data = UserDefaults.standard.data(forKey: "Cards") {
+            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
+                self.cards = decoded
+            }
+        }
+    }
+}
+
+struct DefaultButton: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(Color(hex: 0x565656))
+            .clipShape(Circle())
+            .shadow(radius: 20)
+    }
+}
+
+extension View {
+    func defaultButtonStyle() -> some View {
+        modifier(DefaultButton())
+    }
+}
+
+struct CardsView_Previews: PreviewProvider {
+    static var previews: some View {
+        CardsView()
+    }
 }
