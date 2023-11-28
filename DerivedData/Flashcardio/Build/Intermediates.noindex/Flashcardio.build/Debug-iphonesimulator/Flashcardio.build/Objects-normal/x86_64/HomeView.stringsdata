@@ -1,0 +1,28 @@
+{
+  "source": "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Flashcardio"
+      },
+      {
+        "comment": "",
+        "key": "settings"
+      },
+      {
+        "comment": "",
+        "key": "Flashcard Sets"
+      },
+      {
+        "comment": "",
+        "key": "Profile"
+      },
+      {
+        "comment": "",
+        "key": "Flashcard Set: %@"
+      }
+    ]
+  },
+  "version": 1
+}

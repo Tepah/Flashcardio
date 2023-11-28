@@ -9,6 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        Text("Flashcardio")
+            .font(.title)
+            .bold()
+            
         NavigationView {
             VStack {
                 TabView{
@@ -21,12 +25,11 @@ struct HomeView: View {
                             Label("Profile", systemImage:"person.circle")
                         }
                 }
-                .navigationTitle("Flashcardio")
-                .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
 }
+
 
 struct FlashcardSetListView: View {
     @State private var flashcardSets: [String] = ["Testing 1", "Set 2"]
@@ -40,19 +43,6 @@ struct FlashcardSetListView: View {
                         Text(setTitle)
                     }
                 }
-            }
-            
-            Section {
-                TextField("New Set", text: $newSetTitle)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                
-                Button("Create a new set") {
-                    if !newSetTitle.isEmpty {
-                        flashcardSets.append(newSetTitle)
-                        newSetTitle = ""
-                    }
-                }
-                .disabled(newSetTitle.isEmpty)
             }
         }
         .navigationTitle("Flashcard Sets")

@@ -1,0 +1,28 @@
+{
+  "source": "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Flashcard Set: %@"
+      },
+      {
+        "comment": "",
+        "key": "Flashcard Sets"
+      },
+      {
+        "comment": "",
+        "key": "Flashcardio"
+      },
+      {
+        "comment": "",
+        "key": "settings"
+      },
+      {
+        "comment": "",
+        "key": "Profile"
+      }
+    ]
+  },
+  "version": 1
+}
