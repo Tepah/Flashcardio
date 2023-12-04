@@ -14,6 +14,12 @@
 		C12F3C652B0C080A00AA7D60 /* FlashcardioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C642B0C080A00AA7D60 /* FlashcardioUITests.swift */; };
 		C12F3C672B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C662B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift */; };
 		C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C732B0C098A00AA7D60 /* Main.swift */; };
+		C12F3C762B0EE88C00AA7D60 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C752B0EE88C00AA7D60 /* LoginView.swift */; };
+		C12F3C7A2B0EEAB900AA7D60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C12F3C792B0EEAB900AA7D60 /* GoogleService-Info.plist */; };
+		C12F3C7E2B0EF10300AA7D60 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C12F3C7D2B0EF10300AA7D60 /* FirebaseStorage */; };
+		C12F3C802B0EF11000AA7D60 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C12F3C7F2B0EF11000AA7D60 /* FirebaseAuth */; };
+		C12F3C832B0EF13C00AA7D60 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C12F3C822B0EF13C00AA7D60 /* FirebaseDatabase */; };
+		C12F3C852B0EF14800AA7D60 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C12F3C842B0EF14800AA7D60 /* FirebaseDatabaseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,9 @@
 		C12F3C642B0C080A00AA7D60 /* FlashcardioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioUITests.swift; sourceTree = "<group>"; };
 		C12F3C662B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C12F3C732B0C098A00AA7D60 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		C12F3C752B0EE88C00AA7D60 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C12F3C792B0EEAB900AA7D60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C12F3C812B0EF11300AA7D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12F3C852B0EF14800AA7D60 /* FirebaseDatabaseSwift in Frameworks */,
+				C12F3C832B0EF13C00AA7D60 /* FirebaseDatabase in Frameworks */,
+				C12F3C7E2B0EF10300AA7D60 /* FirebaseStorage in Frameworks */,
+				C12F3C802B0EF11000AA7D60 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,7 @@
 				C12F3C592B0C080A00AA7D60 /* FlashcardioTests */,
 				C12F3C632B0C080A00AA7D60 /* FlashcardioUITests */,
 				C12F3C472B0C080900AA7D60 /* Products */,
+				C12F3C7C2B0EF10300AA7D60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +108,12 @@
 		C12F3C482B0C080900AA7D60 /* Flashcardio */ = {
 			isa = PBXGroup;
 			children = (
+				C12F3C862B0EF36400AA7D60 /* Views */,
+				C12F3C812B0EF11300AA7D60 /* Info.plist */,
 				C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */,
 				C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */,
+				C12F3C792B0EEAB900AA7D60 /* GoogleService-Info.plist */,
 				C12F3C4F2B0C080A00AA7D60 /* Preview Content */,
-				C12F3C732B0C098A00AA7D60 /* Main.swift */,
 			);
 			path = Flashcardio;
 			sourceTree = "<group>";
@@ -127,6 +143,22 @@
 			path = FlashcardioUITests;
 			sourceTree = "<group>";
 		};
+		C12F3C7C2B0EF10300AA7D60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C12F3C862B0EF36400AA7D60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C12F3C752B0EE88C00AA7D60 /* LoginView.swift */,
+				C12F3C732B0C098A00AA7D60 /* Main.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +175,12 @@
 			dependencies = (
 			);
 			name = Flashcardio;
+			packageProductDependencies = (
+				C12F3C7D2B0EF10300AA7D60 /* FirebaseStorage */,
+				C12F3C7F2B0EF11000AA7D60 /* FirebaseAuth */,
+				C12F3C822B0EF13C00AA7D60 /* FirebaseDatabase */,
+				C12F3C842B0EF14800AA7D60 /* FirebaseDatabaseSwift */,
+			);
 			productName = Flashcardio;
 			productReference = C12F3C462B0C080900AA7D60 /* Flashcardio.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +253,9 @@
 				Base,
 			);
 			mainGroup = C12F3C3D2B0C080900AA7D60;
+			packageReferences = (
+				C12F3C7B2B0EEB8900AA7D60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C12F3C472B0C080900AA7D60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +274,7 @@
 			files = (
 				C12F3C512B0C080A00AA7D60 /* Preview Assets.xcassets in Resources */,
 				C12F3C4E2B0C080A00AA7D60 /* Assets.xcassets in Resources */,
+				C12F3C7A2B0EEAB900AA7D60 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12F3C762B0EE88C00AA7D60 /* LoginView.swift in Sources */,
 				C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */,
 				C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */,
 			);
@@ -424,6 +467,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Flashcardio/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Flashcardio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +496,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Flashcardio/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Flashcardio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +627,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C12F3C7B2B0EEB8900AA7D60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C12F3C7D2B0EF10300AA7D60 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C12F3C7B2B0EEB8900AA7D60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C12F3C7F2B0EF11000AA7D60 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C12F3C7B2B0EEB8900AA7D60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C12F3C822B0EF13C00AA7D60 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C12F3C7B2B0EEB8900AA7D60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		C12F3C842B0EF14800AA7D60 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C12F3C7B2B0EEB8900AA7D60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C12F3C3E2B0C080900AA7D60 /* Project object */;
 }
