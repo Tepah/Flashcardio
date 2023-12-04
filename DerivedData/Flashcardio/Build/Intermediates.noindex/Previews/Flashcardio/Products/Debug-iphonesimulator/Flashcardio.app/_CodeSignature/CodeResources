@@ -12,9 +12,21 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>Storyboard.storyboardc/Info.plist</key>
+		<data>
+		GnMdGFfDuvwAuWJN7FS9ELLozY4=
+		</data>
 	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>Storyboard.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9gq+m2SfIqZdO4RnP+Q5bwx0h1nftPpvwkJZZ8jBiZE=
+			</data>
+		</dict>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^.*</key>
