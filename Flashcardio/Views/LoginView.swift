@@ -62,6 +62,7 @@ struct LoginView: View {
 }
 
 struct SignUpView: View {
+    // TODO: Needs to log out when making an account
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var showErrorModal: Bool = false
