@@ -20,6 +20,7 @@
 		C12F3C802B0EF11000AA7D60 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C12F3C7F2B0EF11000AA7D60 /* FirebaseAuth */; };
 		C12F3C832B0EF13C00AA7D60 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C12F3C822B0EF13C00AA7D60 /* FirebaseDatabase */; };
 		C12F3C852B0EF14800AA7D60 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C12F3C842B0EF14800AA7D60 /* FirebaseDatabaseSwift */; };
+		C1D8259B2B1D69240090C419 /* CreateSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8259A2B1D69240090C419 /* CreateSetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C12F3C752B0EE88C00AA7D60 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C12F3C792B0EEAB900AA7D60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C12F3C812B0EF11300AA7D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C1D8259A2B1D69240090C419 /* CreateSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			children = (
 				C12F3C752B0EE88C00AA7D60 /* LoginView.swift */,
 				C12F3C732B0C098A00AA7D60 /* Main.swift */,
+				C1D8259A2B1D69240090C419 /* CreateSetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12F3C762B0EE88C00AA7D60 /* LoginView.swift in Sources */,
+				C1D8259B2B1D69240090C419 /* CreateSetView.swift in Sources */,
 				C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */,
 				C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */,
 			);
