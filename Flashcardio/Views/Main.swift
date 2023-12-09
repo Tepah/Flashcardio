@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 extension Color {
     init(hex: UInt, alpha: Double = 1.0) {
@@ -39,6 +40,10 @@ struct Main: View {
                     FlashCardSet(title: "tempoary name 4").listRowBackground(Color(hex: 0x2E3A31))
                     // Add card button
                     AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
+                    // Temporary log out button lol
+                    Button("Logout") {
+                        logoutLogic()
+                    }
                 }
                 .listStyle(PlainListStyle())
             }
@@ -103,6 +108,15 @@ struct TempView: View {
         VStack {
             Text("Nothing to see here..")
         }
+    }
+}
+
+func logoutLogic() {
+    do {
+        try Auth.auth().signOut()
+        print("Logged out successfully.")
+    } catch let signOutError as NSError {
+        print("Error signing out: \(signOutError.localizedDescription)")
     }
 }
 
