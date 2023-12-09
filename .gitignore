@@ -1,0 +1,20 @@
+# Xcode
+.DS_Store
+*.swp
+*~.nib/
+
+# Swift
+*.hmap
+*.ipa
+*.xcuserstate
+*.xccheckout
+*.xcworkspace
+*.xcscmblueprint
+DerivedData/
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+Flashcardio.xcodeproj/project.xcworkspace/xcuserdata/pete.xcuserdatad/UserInterfaceState.xcuserstate
