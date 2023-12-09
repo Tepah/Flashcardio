@@ -1,0 +1,20 @@
+{
+  "source": "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Main.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Flashcardio"
+      },
+      {
+        "comment": "",
+        "key": "+"
+      },
+      {
+        "comment": "",
+        "key": "Nothing to see here.."
+      }
+    ]
+  },
+  "version": 1
+}

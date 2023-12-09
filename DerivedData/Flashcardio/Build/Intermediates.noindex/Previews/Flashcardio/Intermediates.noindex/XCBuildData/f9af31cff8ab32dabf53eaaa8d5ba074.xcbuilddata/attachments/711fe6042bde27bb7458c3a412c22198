@@ -1,0 +1,48 @@
+{
+  "" : {
+    "diagnostics" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Flashcardio-master.dia",
+    "emit-module-dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Flashcardio-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Flashcardio-master-emit-module.dia",
+    "swift-dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Flashcardio-master.swiftdeps"
+  },
+  "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/FlashcardioApp.swift" : {
+    "const-values" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/FlashcardioApp.swiftconstvalues",
+    "dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/FlashcardioApp.d",
+    "diagnostics" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/FlashcardioApp.dia",
+    "index-unit-output-path" : "/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/FlashcardioApp.o",
+    "llvm-bc" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/FlashcardioApp.bc",
+    "object" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/FlashcardioApp.o",
+    "swift-dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/FlashcardioApp.swiftdeps",
+    "swiftmodule" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/FlashcardioApp~partial.swiftmodule"
+  },
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/HomeView.swift" : {
+    "const-values" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView.d",
+    "diagnostics" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView.dia",
+    "index-unit-output-path" : "/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView.o",
+    "llvm-bc" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView.bc",
+    "object" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView.o",
+    "swift-dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/HomeView~partial.swiftmodule"
+  },
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Main.swift" : {
+    "const-values" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Main.swiftconstvalues",
+    "dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Main.d",
+    "diagnostics" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Main.dia",
+    "index-unit-output-path" : "/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Main.o",
+    "llvm-bc" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Main.bc",
+    "object" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Main.o",
+    "swift-dependencies" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Main.swiftdeps",
+    "swiftmodule" : "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Build/Intermediates.noindex/Previews/Flashcardio/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/Objects-normal/x86_64/Main~partial.swiftmodule"
+  }
+}

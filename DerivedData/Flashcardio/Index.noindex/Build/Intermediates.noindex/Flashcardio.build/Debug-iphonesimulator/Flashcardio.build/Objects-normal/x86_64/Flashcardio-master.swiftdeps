@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+options: "a09f13601d62acac0fb6b0ad79ddbf8314cb84f67405934f145b80409c7bf021"
+build_start_time: [1701143993, 807605000]
+build_end_time: [1701143993, 894653000]
+inputs:
+  ? "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Index.noindex/Build/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : !dirty [1701143992, 685925406]
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/FlashcardioApp.swift": !dirty [1701137817, 378632742]
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/HomeView.swift": !dirty [1701143382, 543779394]
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Main.swift": !dirty [1701138822, 479912238]
