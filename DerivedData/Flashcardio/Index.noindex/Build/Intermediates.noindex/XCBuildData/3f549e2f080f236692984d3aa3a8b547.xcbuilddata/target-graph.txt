@@ -1,0 +1,3 @@
+Target dependency graph (2 targets)
+Target 'Flashcardio' in project 'Flashcardio' (no dependencies)
+Target 'Flashcardio' in project 'Flashcardio' (no dependencies)
