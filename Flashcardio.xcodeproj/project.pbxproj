@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225D01B42B147151001A065A /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D01B32B147151001A065A /* CardsView.swift */; };
+		225D01B62B147167001A065A /* EditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D01B52B147167001A065A /* EditCardView.swift */; };
+		22E6EDBE2B0D8DAE00038BD5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6EDBD2B0D8DAE00038BD5 /* Card.swift */; };
+		22E6EDC02B0D8E0900038BD5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6EDBF2B0D8E0900038BD5 /* CardView.swift */; };
+		66F938D42B1587EC00132822 /* BgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F938D32B1587EC00132822 /* BgView.swift */; };
+		C10C59082B25020E0050DF28 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C59072B25020E0050DF28 /* Main.swift */; };
 		C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */; };
 		C12F3C4E2B0C080A00AA7D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */; };
 		C12F3C512B0C080A00AA7D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F3C502B0C080A00AA7D60 /* Preview Assets.xcassets */; };
 		C12F3C5B2B0C080A00AA7D60 /* FlashcardioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C5A2B0C080A00AA7D60 /* FlashcardioTests.swift */; };
 		C12F3C652B0C080A00AA7D60 /* FlashcardioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C642B0C080A00AA7D60 /* FlashcardioUITests.swift */; };
 		C12F3C672B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C662B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift */; };
-		C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C732B0C098A00AA7D60 /* Main.swift */; };
 		C12F3C762B0EE88C00AA7D60 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F3C752B0EE88C00AA7D60 /* LoginView.swift */; };
 		C12F3C7A2B0EEAB900AA7D60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C12F3C792B0EEAB900AA7D60 /* GoogleService-Info.plist */; };
 		C12F3C7E2B0EF10300AA7D60 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C12F3C7D2B0EF10300AA7D60 /* FirebaseStorage */; };
@@ -41,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225D01B32B147151001A065A /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		225D01B52B147167001A065A /* EditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardView.swift; sourceTree = "<group>"; };
+		22E6EDBD2B0D8DAE00038BD5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		22E6EDBF2B0D8E0900038BD5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		66F938D32B1587EC00132822 /* BgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgView.swift; sourceTree = "<group>"; };
+		C10C59072B25020E0050DF28 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		C12F3C462B0C080900AA7D60 /* Flashcardio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcardio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioApp.swift; sourceTree = "<group>"; };
 		C12F3C4D2B0C080A00AA7D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +61,6 @@
 		C12F3C602B0C080A00AA7D60 /* FlashcardioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F3C642B0C080A00AA7D60 /* FlashcardioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioUITests.swift; sourceTree = "<group>"; };
 		C12F3C662B0C080A00AA7D60 /* FlashcardioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardioUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C12F3C732B0C098A00AA7D60 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		C12F3C752B0EE88C00AA7D60 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C12F3C792B0EEAB900AA7D60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C12F3C812B0EF11300AA7D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C10C59062B24FDAB0050DF28 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				22E6EDBD2B0D8DAE00038BD5 /* Card.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C12F3C3D2B0C080900AA7D60 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +128,7 @@
 		C12F3C482B0C080900AA7D60 /* Flashcardio */ = {
 			isa = PBXGroup;
 			children = (
+				C10C59062B24FDAB0050DF28 /* Components */,
 				C12F3C862B0EF36400AA7D60 /* Views */,
 				C12F3C812B0EF11300AA7D60 /* Info.plist */,
 				C12F3C492B0C080900AA7D60 /* FlashcardioApp.swift */,
@@ -156,7 +175,11 @@
 			isa = PBXGroup;
 			children = (
 				C12F3C752B0EE88C00AA7D60 /* LoginView.swift */,
-				C12F3C732B0C098A00AA7D60 /* Main.swift */,
+				66F938D32B1587EC00132822 /* BgView.swift */,
+				22E6EDBF2B0D8E0900038BD5 /* CardView.swift */,
+				225D01B32B147151001A065A /* CardsView.swift */,
+				225D01B52B147167001A065A /* EditCardView.swift */,
+				C10C59072B25020E0050DF28 /* Main.swift */,
 				C1D8259A2B1D69240090C419 /* CreateSetView.swift */,
 			);
 			path = Views;
@@ -303,8 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12F3C762B0EE88C00AA7D60 /* LoginView.swift in Sources */,
+				66F938D42B1587EC00132822 /* BgView.swift in Sources */,
+				C10C59082B25020E0050DF28 /* Main.swift in Sources */,
+				225D01B62B147167001A065A /* EditCardView.swift in Sources */,
+				225D01B42B147151001A065A /* CardsView.swift in Sources */,
+				22E6EDBE2B0D8DAE00038BD5 /* Card.swift in Sources */,
+				22E6EDC02B0D8E0900038BD5 /* CardView.swift in Sources */,
 				C1D8259B2B1D69240090C419 /* CreateSetView.swift in Sources */,
-				C12F3C742B0C098A00AA7D60 /* Main.swift in Sources */,
 				C12F3C4A2B0C080900AA7D60 /* FlashcardioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

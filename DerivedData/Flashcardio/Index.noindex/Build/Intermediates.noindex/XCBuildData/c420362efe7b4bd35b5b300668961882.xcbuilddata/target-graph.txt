@@ -1,0 +1,13 @@
+Target dependency graph (8 targets)
+Target 'FlashcardioUITests' in project 'Flashcardio' (no dependencies)
+Target 'FlashcardioUITests' in project 'Flashcardio'
+➜ Explicit dependency on target 'Flashcardio' in project 'Flashcardio'
+Target 'FlashcardioUITests' in project 'Flashcardio'
+➜ Explicit dependency on target 'Flashcardio' in project 'Flashcardio'
+Target 'FlashcardioTests' in project 'Flashcardio' (no dependencies)
+Target 'FlashcardioTests' in project 'Flashcardio'
+➜ Explicit dependency on target 'Flashcardio' in project 'Flashcardio'
+Target 'FlashcardioTests' in project 'Flashcardio'
+➜ Explicit dependency on target 'Flashcardio' in project 'Flashcardio'
+Target 'Flashcardio' in project 'Flashcardio' (no dependencies)
+Target 'Flashcardio' in project 'Flashcardio' (no dependencies)
