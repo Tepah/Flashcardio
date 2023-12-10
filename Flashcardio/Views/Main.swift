@@ -7,6 +7,8 @@
 
 import SwiftUI
 import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 extension Color {
     init(hex: UInt, alpha: Double = 1.0) {
@@ -24,30 +26,39 @@ struct Main: View {
     var body: some View {
         NavigationView {
             VStack {
-                // Put cards per card on account here !!!right now placeholder
-                List {
-                    GeometryReader { geometry in
-                                        Text("Flashcardio")
-                                            .font(.largeTitle) // Set your desired font size here
-                                            .frame(width: geometry.size.width, height: 0)
-                                            .foregroundColor(Color.white)
-                                    }
-                    .listRowBackground(Color(hex: 0x2E3A31))
-                    .padding(.vertical, 10)
-                    FlashCardSet(title: "tempoary name 1").listRowBackground(Color(hex: 0x2E3A31))
-                    FlashCardSet(title: "tempoary name 2").listRowBackground(Color(hex: 0x2E3A31))
-                    FlashCardSet(title: "tempoary name 3").listRowBackground(Color(hex: 0x2E3A31))
-                    FlashCardSet(title: "tempoary name 4").listRowBackground(Color(hex: 0x2E3A31))
-                    // Add card button
-                    AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
-                    // Temporary log out button lol
-                    Button("Logout") {
-                        logoutLogic()
-                    }
+                GeometryReader { geometry in
+                                    Text("Flashcardio")
+                                        .font(.largeTitle) // Set your desired font size here
+                                        .frame(width: geometry.size.width, height: 0)
+                                        .foregroundColor(Color.white)
+                                }
+                .listRowBackground(Color(hex: 0x2E3A31))
+                .padding(.vertical, 10)
+                ShowUsersDecks()
+                // Add card button
+                AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
+                // Temporary log out button lol
+                Button("Logout") {
+                    logoutLogic()
                 }
-                .listStyle(PlainListStyle())
             }
             .background(Color(hex: 0x2E3A31))
+        }
+    }
+}
+
+struct ShowUsersDecks: View {
+    @StateObject private var decks = MyDataViewModel()
+    
+    var body: some View {
+        VStack {
+            List(decks.myDataList) { deck in
+                FlashCardSet(title:  deck.Title).listRowBackground(Color(hex: 0x2E3A31))
+            }
+            .listStyle(PlainListStyle())
+        }
+        .onAppear {
+            decks.loadData(forUserId: getUserId())
         }
     }
 }
