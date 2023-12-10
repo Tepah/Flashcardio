@@ -85,7 +85,7 @@ struct FlashCardSet: View {
 
 struct AddCard: View {
     var body: some View {
-        NavigationLink(destination: TempView()) {
+        NavigationLink(destination: CreateSetView()) {
             HStack {
                 Spacer()
                 RoundedRectangle(cornerRadius: 8)
