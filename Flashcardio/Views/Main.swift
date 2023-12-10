@@ -53,7 +53,7 @@ struct ShowUsersDecks: View {
     var body: some View {
         VStack {
             List(decks.myDataList) { deck in
-                FlashCardSet(title:  deck.Title).listRowBackground(Color(hex: 0x2E3A31))
+                FlashCardSet(title: deck.Title, deckID: deck.id!).listRowBackground(Color(hex: 0x2E3A31))
             }
             .listStyle(PlainListStyle())
         }
@@ -66,9 +66,10 @@ struct ShowUsersDecks: View {
 // work in progress
 struct FlashCardSet: View {
     let title: String
+    let deckID: String
     
     var body: some View {
-        NavigationLink(destination: TempView()) {
+        NavigationLink(destination: CardsView(deckID: deckID, title: title)) {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color(hex: 0x565656))
