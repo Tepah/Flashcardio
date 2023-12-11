@@ -1,17 +1,17 @@
 version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
 options: "db6ee644a445557c1cdb39965ecf4a5bb95cfd6bd05c31f9938b92bc3dc6385f"
-build_start_time: [1702269647, 178484000]
-build_end_time: [1702269647, 186519000]
+build_start_time: [1702311904, 24740000]
+build_end_time: [1702311904, 53246000]
 inputs:
   ? "/Users/simonscolars/Desktop/Flashcardio/DerivedData/Flashcardio/Index.noindex/Build/Intermediates.noindex/Flashcardio.build/Debug-iphonesimulator/Flashcardio.build/DerivedSources/GeneratedAssetSymbols.swift"
-  : !dirty [1702269646, 81333128]
+  : !dirty [1702273536, 152331903]
   "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Components/Card.swift": !dirty [1702269232, 549818653]
   "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Components/Firestore.swift": !dirty [1702269232, 550612204]
   "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/FlashcardioApp.swift": !dirty [1702269232, 551185800]
   "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/BgView.swift": !dirty [1702269232, 553761714]
   "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/CardView.swift": !dirty [1702269232, 554897229]
-  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/CardsView.swift": !dirty [1702269232, 554247934]
-  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/CreateSetView.swift": !dirty [1702269232, 555528355]
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/CardsView.swift": !dirty [1702273545, 583368580]
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/CreateSetView.swift": !dirty [1702311884, 531692036]
   "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/EditCardView.swift": !dirty [1702269232, 556137493]
-  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/LoginView.swift": !dirty [1702269232, 556756355]
-  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/Main.swift": !dirty [1702269232, 557655579]
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/LoginView.swift": !dirty [1702275065, 112734758]
+  "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/Main.swift": !dirty [1702272560, 527857275]

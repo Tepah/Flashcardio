@@ -27,8 +27,9 @@ struct CreateSetView: View {
                     .padding()
                     .multilineTextAlignment(.center)
                     .font(.title)
+                    .foregroundColor(.white)
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(Color(hex: 0x80abb7))
+                    .fill(Color(hex: 0x7399a4))
                     .frame(width: 340, height: 160)
                     .overlay(
                         TextField("Question", text: $question)
@@ -38,7 +39,7 @@ struct CreateSetView: View {
                             .font(.title)
                     )
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(Color(hex: 0x80abb7))
+                    .fill(Color(hex: 0x7399a4))
                     .frame(width: 340, height: 160)
                     .overlay(
                         TextField("Answer", text: $answer)

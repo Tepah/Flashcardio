@@ -12,7 +12,7 @@ extension BgView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
         #sourceLocation(file: "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/BgView.swift", line: 12)
         ZStack {
-            LinearGradient(colors: [Color(hex: __designTimeInteger("#15493.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[0].arg[0].value", fallback: 0x2B4570)), Color(hex:__designTimeInteger("#15493.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value", fallback: 0x7180))], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: [Color(hex: __designTimeInteger("#9484.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[0].arg[0].value", fallback: 0x2B4570)), Color(hex:__designTimeInteger("#9484.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value", fallback: 0x7180))], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
         }
     

@@ -16,9 +16,9 @@
 	<string>FirebaseCombineSwift</string>
 	<string>EarlGrey</string>
 	<string>FirebaseMLModelDownloader</string>
-	<string>FirebaseFirestoreInternalWrapper</string>
-	<string>FirebaseDynamicLinks</string>
 	<string>paths</string>
+	<string>FirebaseDynamicLinks</string>
+	<string>FirebaseFirestoreInternalWrapper</string>
 	<string>GCDWebServer</string>
 	<string>FirebaseStorage</string>
 	<string>StoreKit</string>
@@ -35,14 +35,14 @@
 	<string>MetricKit</string>
 	<string>FirebaseCore</string>
 	<string>SwiftUI</string>
-	<string>unicode</string>
+	<string>a</string>
 	<string>FirebaseCoreExtension</string>
 	<string>Firebase</string>
 	<string>FirebaseFunctions</string>
 	<string>GameKit</string>
 	<string>FirebaseSessions</string>
 	<string>AuthenticationServices</string>
-	<string>a</string>
+	<string>unicode</string>
 	<string>FirebaseAuthInterop</string>
 	<string>FirebaseFunctionsCombineSwift</string>
 	<string>RemoteConfigFakeConsoleObjC</string>
@@ -56,25 +56,25 @@
 	<string>complicate</string>
 	<string>In</string>
 	<string>CoreTelephony</string>
-	<string>GTMSessionFetcherLogView</string>
 	<string>FirebaseAuth</string>
+	<string>GTMSessionFetcherLogView</string>
 	<string>GTMSessionFetcherFull</string>
 	<string>FirebaseFirestoreSwift</string>
-	<string>FirebaseAnalyticsSwift</string>
 	<string>ClockKit</string>
 	<string>objc</string>
+	<string>FirebaseAnalyticsSwift</string>
 	<string>FirebaseMessaging</string>
 	<string>MobileCoreServices</string>
 	<string>GoogleUtilitiesComponents</string>
 	<string>WatchKit</string>
 	<string>netinet</string>
 	<string>SharedTestUtilities</string>
+	<string>GTMSessionFetcher</string>
+	<string>GoogleSignIn</string>
 	<string>FirebaseInstallations</string>
 	<string>FBSDKLoginKit</string>
-	<string>GTMSessionFetcher</string>
-	<string>Photos</string>
 	<string>AppKit</string>
-	<string>GoogleSignIn</string>
+	<string>Photos</string>
 	<string>UserNotifications</string>
 	<string>FirebaseFirestoreCombineSwift</string>
 	<string>FirebaseInAppMessaging</string>
@@ -115,10 +115,10 @@
 	<string>sys</string>
 	<string>DeviceCheck</string>
 	<string>Cocoa</string>
+	<string>Darwin</string>
 	<string>public</string>
 	<string>FirebaseDatabaseInternal</string>
 	<string>Framework</string>
-	<string>Darwin</string>
 	<string>FirebaseABTesting</string>
 	<string>GoogleUtilities</string>
 	<string>Foundation</string>
