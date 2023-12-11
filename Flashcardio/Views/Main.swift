@@ -23,43 +23,68 @@ extension Color {
 }
 
 struct Main: View {
+    @State private var showSettingsScreen = false
+    
     var body: some View {
         NavigationView {
             BgView()
                 .overlay(
             VStack {
+                Spacer()
+                
+                HStack{
+                    Spacer()
+                    Button(action: {
+                        self.showSettingsScreen = true
+                    }) {
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+                                .offset(y: -6)
+                            
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+                            
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+                                .offset(y: 6)
+                        }
+                        .padding()
+                    }
+                    .padding()
+                }
                 GeometryReader { geometry in
-                                    Text("Flashcardio")
-                                        .font(.largeTitle) // Set your desired font size here
-                                        .frame(width: geometry.size.width, height: 20)
-                                        .foregroundColor(Color.white)
-                                        .bold()
-                                }
-                //.listRowBackground(Color(hex: 0x2E3A31))
+                    Text("Flashcardio")
+                        .font(.largeTitle) // Set your desired font size here
+                        .frame(width: geometry.size.width, height: 20)
+                        .foregroundColor(Color.white)
+                        .bold()
+                }
                 .padding(.vertical, 10)
                 ShowUsersDecks()
                 // Add card button
                 AddCard().listRowBackground(Color(hex: 0x2e3a31)).contentShape(Rectangle())
-                // Temporary log out button lol
-                Button("Logout") {
-                    logoutLogic()
-                }
+            }
+            .sheet(isPresented: $showSettingsScreen) {
+                SettingsView()
             })
-            //.background(Color(hex: 0x2E3A31))
         }
     }
 }
+
+
 
 struct ShowUsersDecks: View {
     @StateObject private var decks = MyDataViewModel()
     
     var body: some View {
-        VStack {
-            List(decks.myDataList) { deck in
-                FlashCardSet(title:  deck.Title).listRowBackground(Color(hex: 0x2E3A31))
-            }
-            .listStyle(PlainListStyle())
+        List(decks.myDataList) { deck in
+            FlashCardSet(title: deck.Title, deckID: deck.id!).listRowBackground(Color(hex: 0x2E3A31))
         }
+        .listStyle(PlainListStyle())
         .onAppear {
             decks.loadData(forUserId: getUserId())
         }
@@ -69,9 +94,10 @@ struct ShowUsersDecks: View {
 // work in progress
 struct FlashCardSet: View {
     let title: String
+    let deckID: String
     
     var body: some View {
-        NavigationLink(destination: TempView()) {
+        NavigationLink(destination: CardsView(deckID: deckID, title: title)) {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color(hex: 0x565656))
@@ -122,15 +148,6 @@ struct TempView: View {
         VStack {
             Text("Nothing to see here..")
         }
-    }
-}
-
-func logoutLogic() {
-    do {
-        try Auth.auth().signOut()
-        print("Logged out successfully.")
-    } catch let signOutError as NSError {
-        print("Error signing out: \(signOutError.localizedDescription)")
     }
 }
 

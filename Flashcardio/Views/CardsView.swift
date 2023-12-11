@@ -15,6 +15,8 @@ extension View{
 }
 
 struct CardsView: View {
+    let deckID: String
+    let title: String
     
     @State private var cards = [Card]()
     @State private var isActive = true
@@ -62,7 +64,7 @@ struct CardsView: View {
             .padding()
         })
         .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
-            EditCardView()
+            EditCardView(deckID: deckID, title: title)
         }
         .background(Color(hex: 0x2E3A31))
         .onAppear(perform: resetCards)
@@ -84,9 +86,23 @@ struct CardsView: View {
     }
     
     func loadData() {
-        if let data = UserDefaults.standard.data(forKey: "Cards") {
-            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-                self.cards = decoded
+        getDeckData(deckID: deckID, title: "Deck") { result in
+            switch result {
+            case .success(let data):
+                print("Document data: \(data)")
+                // Handle the data here
+                if let questions = data["Questions"] as? [String], let answers = data["Answers"] as? [String] {
+                    // Using zip to combine corresponding elements into a list of tuples
+                    let combinedList = zip(questions, answers).map { (question, answer) in
+                        Card(question: question, answer: answer)
+                    }
+
+                    // Printing the resulting list
+                    self.cards = combinedList
+                }
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
+                // Handle the error here
             }
         }
     }
@@ -110,6 +126,6 @@ extension View {
 
 struct CardsView_Previews: PreviewProvider {
     static var previews: some View {
-        CardsView()
+        CardsView(deckID: "", title: "Hello")
     }
 }
