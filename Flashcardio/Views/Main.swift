@@ -30,8 +30,6 @@ struct Main: View {
             BgView()
                 .overlay(
             VStack {
-                Spacer()
-                
                 HStack{
                     Spacer()
                     Button(action: {
@@ -54,16 +52,12 @@ struct Main: View {
                         }
                         .padding()
                     }
-                    .padding()
-                }
-                GeometryReader { geometry in
-                    Text("Flashcardio")
-                        .font(.largeTitle) // Set your desired font size here
-                        .frame(width: geometry.size.width, height: 20)
-                        .foregroundColor(Color.white)
-                        .bold()
                 }
                 .padding(.vertical, 10)
+                Text("Flashcardio")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.white)
+                    .bold()
                 ShowUsersDecks()
                 // Add card button
                 AddCard().listRowBackground(Color(hex: 0x2e3a31)).contentShape(Rectangle())
@@ -82,8 +76,10 @@ struct ShowUsersDecks: View {
     
     var body: some View {
         List(decks.myDataList) { deck in
-            FlashCardSet(title: deck.Title, deckID: deck.id!).listRowBackground(Color(hex: 0x2E3A31))
+            FlashCardSet(title: deck.Title, deckID: deck.id!)
+            .listRowBackground(Color.clear)
         }
+        .background(Color.clear)
         .listStyle(PlainListStyle())
         .onAppear {
             decks.loadData(forUserId: getUserId())
