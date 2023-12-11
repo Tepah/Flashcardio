@@ -7,6 +7,8 @@
 
 import SwiftUI
 import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 extension Color {
     init(hex: UInt, alpha: Double = 1.0) {
@@ -52,24 +54,17 @@ struct Main: View {
                     }
                     .padding()
                 }
-                // Put cards per card on account here !!!right now placeholder
-                List {
-                    GeometryReader { geometry in
-                                        Text("Flashcardio")
-                                            .font(.largeTitle) // Set your desired font size here
-                                            .frame(width: geometry.size.width, height: 0)
-                                            .foregroundColor(Color.white)
-                                    }
-                    .listRowBackground(Color(hex: 0x2E3A31))
-                    .padding(.vertical, 10)
-                    FlashCardSet(title: "tempoary name 1").listRowBackground(Color(hex: 0x2E3A31))
-                    FlashCardSet(title: "tempoary name 2").listRowBackground(Color(hex: 0x2E3A31))
-                    FlashCardSet(title: "tempoary name 3").listRowBackground(Color(hex: 0x2E3A31))
-                    FlashCardSet(title: "tempoary name 4").listRowBackground(Color(hex: 0x2E3A31))
-                    // Add card button
-                    AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
+                GeometryReader { geometry in
+                                    Text("Flashcardio")
+                                        .font(.largeTitle) // Set your desired font size here
+                                        .frame(width: geometry.size.width, height: 0)
+                                        .foregroundColor(Color.white)
+                                }
+                .listRowBackground(Color(hex: 0x2E3A31))
+                ShowUsersDecks()
+                // Add card button
+                AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
                 }
-                .listStyle(PlainListStyle())
             }
             .background(Color(hex: 0x2E3A31))
         }
@@ -79,12 +74,27 @@ struct Main: View {
     }
 }
 
+struct ShowUsersDecks: View {
+    @StateObject private var decks = MyDataViewModel()
+    
+    var body: some View {
+        List(decks.myDataList) { deck in
+            FlashCardSet(title: deck.Title, deckID: deck.id!).listRowBackground(Color(hex: 0x2E3A31))
+        }
+        .listStyle(PlainListStyle())
+        .onAppear {
+            decks.loadData(forUserId: getUserId())
+        }
+    }
+}
+
 // work in progress
 struct FlashCardSet: View {
     let title: String
+    let deckID: String
     
     var body: some View {
-        NavigationLink(destination: TempView()) {
+        NavigationLink(destination: CardsView(deckID: deckID, title: title)) {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color(hex: 0x565656))

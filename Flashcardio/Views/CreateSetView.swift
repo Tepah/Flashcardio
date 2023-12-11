@@ -180,26 +180,6 @@ func saveDeck(title: String, deck: [(String, String)]) {
     
 }
 
-func getDocumentsForUserId(userId: String, collectionName: String, completion: @escaping ([QueryDocumentSnapshot]?, Error?) -> Void) {
-    let db = Firestore.firestore()
-
-    // Create a query to filter documents by userId
-    let query = db.collection(collectionName).whereField("UserId", isEqualTo: userId)
-
-    // Execute the query
-    query.getDocuments { (querySnapshot, error) in
-        if let error = error {
-            // Handle the error
-            completion(nil, error)
-        } else {
-            // Documents retrieved successfully
-            let documents = querySnapshot?.documents ?? []
-            completion(documents, nil)
-        }
-    }
-}
-
-
 func checkDeck(deck: [(String, String)]) -> [(String, String)] {
     if deck.last!.0 == "" || deck.last!.1 == "" {
         return Array(deck.dropLast())
@@ -207,19 +187,6 @@ func checkDeck(deck: [(String, String)]) -> [(String, String)] {
         return deck
     }
     
-}
-
-func getUserId() -> String {
-    if let user = Auth.auth().currentUser {
-        // User is signed in.
-        let uid = user.uid
-        print("User ID: \(uid)")
-        return uid
-    } else {
-        // No user is signed in.
-        print("No user signed in.")
-        return ""
-    }
 }
 
 #Preview {
