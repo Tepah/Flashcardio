@@ -3,8 +3,8 @@
 <plist version="1.0">
 <array>
 	<string>FirebaseFirestoreTestingSupport</string>
-	<string>FBSDKCoreKit</string>
 	<string>Flashcardio</string>
+	<string>FBSDKCoreKit</string>
 	<string>doesn</string>
 	<string>RecaptchaInterop</string>
 	<string>FirebaseSessionsObjC</string>
@@ -16,9 +16,9 @@
 	<string>FirebaseCombineSwift</string>
 	<string>EarlGrey</string>
 	<string>FirebaseMLModelDownloader</string>
-	<string>paths</string>
-	<string>FirebaseDynamicLinks</string>
 	<string>FirebaseFirestoreInternalWrapper</string>
+	<string>FirebaseDynamicLinks</string>
+	<string>paths</string>
 	<string>GCDWebServer</string>
 	<string>FirebaseStorage</string>
 	<string>StoreKit</string>
@@ -34,15 +34,15 @@
 	<string>SwiftProtobuf</string>
 	<string>MetricKit</string>
 	<string>FirebaseCore</string>
-	<string>SwiftUI</string>
 	<string>a</string>
+	<string>unicode</string>
 	<string>FirebaseCoreExtension</string>
 	<string>Firebase</string>
 	<string>FirebaseFunctions</string>
 	<string>GameKit</string>
 	<string>FirebaseSessions</string>
 	<string>AuthenticationServices</string>
-	<string>unicode</string>
+	<string>SwiftUI</string>
 	<string>FirebaseAuthInterop</string>
 	<string>FirebaseFunctionsCombineSwift</string>
 	<string>RemoteConfigFakeConsoleObjC</string>
@@ -60,21 +60,21 @@
 	<string>GTMSessionFetcherLogView</string>
 	<string>GTMSessionFetcherFull</string>
 	<string>FirebaseFirestoreSwift</string>
-	<string>ClockKit</string>
 	<string>objc</string>
 	<string>FirebaseAnalyticsSwift</string>
+	<string>ClockKit</string>
 	<string>FirebaseMessaging</string>
 	<string>MobileCoreServices</string>
 	<string>GoogleUtilitiesComponents</string>
 	<string>WatchKit</string>
 	<string>netinet</string>
 	<string>SharedTestUtilities</string>
+	<string>FirebaseInstallations</string>
 	<string>GTMSessionFetcher</string>
 	<string>GoogleSignIn</string>
-	<string>FirebaseInstallations</string>
-	<string>FBSDKLoginKit</string>
-	<string>AppKit</string>
 	<string>Photos</string>
+	<string>AppKit</string>
+	<string>FBSDKLoginKit</string>
 	<string>UserNotifications</string>
 	<string>FirebaseFirestoreCombineSwift</string>
 	<string>FirebaseInAppMessaging</string>

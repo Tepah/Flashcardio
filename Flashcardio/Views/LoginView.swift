@@ -78,38 +78,45 @@ struct SignUpView: View {
     @State private var errorMessage: String = "Default Error"
     
     var body: some View {
-        VStack {
-            // Username Text Field
-            TextField("Email", text: $email)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+        BgView()
+            .overlay(
+                VStack {
+                    Text("Creating Account")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .bold()
+                    // Username Text Field
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
             
-            // Password Secure Field
-            SecureField("Password", text: $password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+                    // Password Secure Field
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
             
-            Button("Sign up") {
-                let specialCharacters = CharacterSet(charactersIn: "!@#$%^&*()_-+=[]{}|:;<>,.?/~`")
-                if !isValidEmail(email: email) {
-                    showErrorModal = true
-                    errorMessage = "Not a valid email."
-                } else if password.count < 8 {
-                    showErrorModal = true
-                    errorMessage = "The password is less than 8 characters."
-                } else {
-                    signUpLogic(email:email, password:password)
-                }
+                    Button("Sign up") {
+                        let specialCharacters = CharacterSet(charactersIn: "!@#$%^&*()_-+=[]{}|:;<>,.?/~`")
+                        if !isValidEmail(email: email) {
+                            showErrorModal = true
+                            errorMessage = "Not a valid email."
+                        } else if password.count < 8 {
+                            showErrorModal = true
+                            errorMessage = "The password is less than 8 characters."
+                        } else {
+                            signUpLogic(email:email, password:password)
+                        }
+                    }
+                    .foregroundColor(.white)
+                    .padding()
+                })
+            .alert(isPresented: $showErrorModal) {
+                Alert(
+                    title: Text("Account not created"),
+                    message: Text(errorMessage),
+                    dismissButton: .default(Text("OK"))
+                )
             }
-            .padding()
-        }
-        .alert(isPresented: $showErrorModal) {
-            Alert(
-                title: Text("Account not created"),
-                message: Text(errorMessage),
-                dismissButton: .default(Text("OK"))
-            )
-        }
     }
 }
 

@@ -27,7 +27,7 @@ extension TempView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
         #sourceLocation(file: "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/Main.swift", line: 122)
         VStack {
-            Text(__designTimeString("#9889.[9].[0].property.[0].[0].arg[0].value.[0].arg[0].value", fallback: "Nothing to see here.."))
+            Text(__designTimeString("#8196.[9].[0].property.[0].[0].arg[0].value.[0].arg[0].value", fallback: "Nothing to see here.."))
         }
     
 #sourceLocation()
@@ -40,12 +40,12 @@ extension AddCard {
         NavigationLink(destination: CreateSetView()) {
             HStack {
                 Spacer()
-                RoundedRectangle(cornerRadius: __designTimeInteger("#9889.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].arg[0].value", fallback: 8))
-                    .fill(Color(hex: __designTimeInteger("#9889.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value", fallback: 0x565656)))
-                    .frame(width: __designTimeInteger("#9889.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[1].arg[0].value", fallback: 265), height: __designTimeInteger("#9889.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[1].arg[1].value", fallback: 110))
-                    .opacity(__designTimeFloat("#9889.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[2].arg[0].value", fallback: 0.7))
+                RoundedRectangle(cornerRadius: __designTimeInteger("#8196.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].arg[0].value", fallback: 8))
+                    .fill(Color(hex: __designTimeInteger("#8196.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value", fallback: 0x565656)))
+                    .frame(width: __designTimeInteger("#8196.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[1].arg[0].value", fallback: 265), height: __designTimeInteger("#8196.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[1].arg[1].value", fallback: 110))
+                    .opacity(__designTimeFloat("#8196.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[2].arg[0].value", fallback: 0.7))
                     .overlay(
-                        Text(__designTimeString("#9889.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[3].arg[0].value.arg[0].value", fallback: "+"))
+                        Text(__designTimeString("#8196.[8].[0].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[3].arg[0].value.arg[0].value", fallback: "+"))
                             .foregroundColor(.white)
                             .font(.title)
                     )
@@ -62,25 +62,25 @@ extension FlashCardSet {
         #sourceLocation(file: "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/Main.swift", line: 74)
         NavigationLink(destination: TempView()) {
             ZStack {
-                RoundedRectangle(cornerRadius: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].arg[0].value", fallback: 12))
-                    .fill(Color(hex: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: 0x565656)))
-                    .frame(width: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[1].arg[0].value", fallback: 310), height: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[1].arg[1].value", fallback: 130))
-                    .opacity(__designTimeFloat("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[2].arg[0].value", fallback: 0.6))
-                    .offset(y: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[3].arg[0].value", fallback: 30))
-                RoundedRectangle(cornerRadius: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].arg[0].value", fallback: 10))
-                    .fill(Color(hex: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value", fallback: 0x565656)))
-                    .frame(width: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[1].arg[0].value", fallback: 325), height: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[1].arg[1].value", fallback: 140))
-                    .opacity(__designTimeFloat("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[2].arg[0].value", fallback: 0.7))
-                    .offset(y: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[3].arg[0].value", fallback: 15))
-                RoundedRectangle(cornerRadius: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].arg[0].value", fallback: 8))
-                    .fill(Color(hex: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[0].arg[0].value.arg[0].value", fallback: 0x565656)))
-                    .frame(width: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value", fallback: 340), height: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[1].value", fallback: 160))
+                RoundedRectangle(cornerRadius: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].arg[0].value", fallback: 12))
+                    .fill(Color(hex: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: 0x565656)))
+                    .frame(width: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[1].arg[0].value", fallback: 310), height: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[1].arg[1].value", fallback: 130))
+                    .opacity(__designTimeFloat("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[2].arg[0].value", fallback: 0.6))
+                    .offset(y: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[0].modifier[3].arg[0].value", fallback: 30))
+                RoundedRectangle(cornerRadius: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].arg[0].value", fallback: 10))
+                    .fill(Color(hex: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value", fallback: 0x565656)))
+                    .frame(width: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[1].arg[0].value", fallback: 325), height: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[1].arg[1].value", fallback: 140))
+                    .opacity(__designTimeFloat("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[2].arg[0].value", fallback: 0.7))
+                    .offset(y: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[1].modifier[3].arg[0].value", fallback: 15))
+                RoundedRectangle(cornerRadius: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].arg[0].value", fallback: 8))
+                    .fill(Color(hex: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[0].arg[0].value.arg[0].value", fallback: 0x565656)))
+                    .frame(width: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value", fallback: 340), height: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[1].value", fallback: 160))
                     .overlay(
                         Text(title)
                             .foregroundColor(.white)
                             .font(.title)
                     )
-                    .offset(x: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[3].arg[0].value", fallback: 0), y: __designTimeInteger("#9889.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[3].arg[1].value", fallback: 0))
+                    .offset(x: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[3].arg[0].value", fallback: 0), y: __designTimeInteger("#8196.[7].[1].property.[0].[0].arg[1].value.[0].arg[0].value.[2].modifier[3].arg[1].value", fallback: 0))
             }
         }
     
@@ -93,7 +93,7 @@ extension ShowUsersDecks {
         #sourceLocation(file: "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/Main.swift", line: 57)
         VStack {
             List(decks.myDataList) { deck in
-                FlashCardSet(title:  deck.Title).listRowBackground(Color(hex: __designTimeInteger("#9889.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: 0x2E3A31)))
+                FlashCardSet(title:  deck.Title).listRowBackground(Color(hex: __designTimeInteger("#8196.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: 0x2E3A31)))
             }
             .listStyle(PlainListStyle())
         }
@@ -113,19 +113,19 @@ extension Main {
                 .overlay(
             VStack {
                 GeometryReader { geometry in
-                                    Text(__designTimeString("#9889.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[0].arg[0].value.[0].arg[0].value", fallback: "Flashcardio"))
+                                    Text(__designTimeString("#8196.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[0].arg[0].value.[0].arg[0].value", fallback: "Flashcardio"))
                                         .font(.largeTitle) // Set your desired font size here
-                                        .frame(width: geometry.size.width, height: __designTimeInteger("#9889.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[0].arg[0].value.[0].modifier[1].arg[1].value", fallback: 20))
+                                        .frame(width: geometry.size.width, height: __designTimeInteger("#8196.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[0].arg[0].value.[0].modifier[1].arg[1].value", fallback: 20))
                                         .foregroundColor(Color.white)
                                         .bold()
                                 }
                 //.listRowBackground(Color(hex: 0x2E3A31))
-                .padding(.vertical, __designTimeInteger("#9889.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[0].modifier[0].arg[1].value", fallback: 10))
+                .padding(.vertical, __designTimeInteger("#8196.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[0].modifier[0].arg[1].value", fallback: 10))
                 ShowUsersDecks()
                 // Add card button
-                AddCard().listRowBackground(Color(hex: __designTimeInteger("#9889.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[2].modifier[0].arg[0].value.arg[0].value", fallback: 0x2e3a31))).contentShape(Rectangle())
+                AddCard().listRowBackground(Color(hex: __designTimeInteger("#8196.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[2].modifier[0].arg[0].value.arg[0].value", fallback: 0x2e3a31))).contentShape(Rectangle())
                 // Temporary log out button lol
-                Button(__designTimeString("#9889.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[3].arg[0].value", fallback: "Logout")) {
+                Button(__designTimeString("#8196.[5].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[3].arg[0].value", fallback: "Logout")) {
                     logoutLogic()
                 }
             })
