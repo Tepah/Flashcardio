@@ -1,7 +1,11 @@
 {
-  "source": "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Main.swift",
+  "source": "/Users/simonscolars/Desktop/Flashcardio/Flashcardio/Views/Main.swift",
   "tables": {
     "Localizable": [
+      {
+        "comment": "",
+        "key": "Logout"
+      },
       {
         "comment": "",
         "key": "Flashcardio"
