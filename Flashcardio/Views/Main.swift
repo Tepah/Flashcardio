@@ -96,17 +96,17 @@ struct FlashCardSet: View {
         NavigationLink(destination: CardsView(deckID: deckID, title: title)) {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(Color(hex: 0x565656))
+                    .fill(Color(hex: 0x7399a4))
                     .frame(width: 310, height: 130)
                     .opacity(0.6)
                     .offset(y: 30)
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(Color(hex: 0x565656))
+                    .fill(Color(hex: 0x7399a4))
                     .frame(width: 325, height: 140)
                     .opacity(0.7)
                     .offset(y: 15)
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(Color(hex: 0x565656))
+                    .fill(Color(hex: 0x7399a4))
                     .frame(width: 340, height: 160)
                     .overlay(
                         Text(title)
@@ -125,7 +125,7 @@ struct AddCard: View {
             HStack {
                 Spacer()
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(Color(hex: 0x565656))
+                    .fill(Color(hex: 0x7399a4))
                     .frame(width: 265, height: 110)
                     .opacity(0.7)
                     .overlay(
