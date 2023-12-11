@@ -73,6 +73,49 @@ func getDocumentsForUserId(userId: String, collectionName: String, completion: @
     }
 }
 
+func getDeckData(deckID: String, title: String, completion: @escaping (Result<[String: Any], Error>) -> Void)  {
+    let db = Firestore.firestore()
+    
+    let ref = db.collection("Decks").document(deckID)
+    ref.getDocument { (documentSnapshot, error) in
+       if let error = error {
+           // Handle the error if any
+           completion(.failure(error))
+           return
+       }
+
+       guard let document = documentSnapshot else {
+           // Document doesn't exist
+           completion(.failure(NSError(domain: "Flashcardio", code: 404, userInfo: nil)))
+           return
+       }
+
+       if document.exists {
+           if let data = document.data() {
+               // Document data retrieved successfully
+               completion(.success(data))
+           } else {
+               // Document doesn't contain any data
+               completion(.failure(NSError(domain: "Flashcardio", code: 500, userInfo: nil)))
+           }
+       } else {
+           // Document doesn't exist
+           completion(.failure(NSError(domain: "Flashcardio", code: 404, userInfo: nil)))
+       }
+   }
+}
+
+func updateDeck(deckID: String, updatedDeck: [AnyHashable: Any]) {
+    let ref = Firestore.firestore().collection("Decks").document(deckID)
+    ref.updateData(updatedDeck) { error in
+        if let error = error {
+            print("Error updating document: \(error.localizedDescription)")
+        } else {
+            print("Document updated successfully!")
+        }
+    }
+}
+
 func getUserId() -> String {
     if let user = Auth.auth().currentUser {
         // User is signed in.

@@ -33,7 +33,6 @@ struct Main: View {
                                         .foregroundColor(Color.white)
                                 }
                 .listRowBackground(Color(hex: 0x2E3A31))
-                .padding(.vertical, 10)
                 ShowUsersDecks()
                 // Add card button
                 AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
@@ -51,12 +50,10 @@ struct ShowUsersDecks: View {
     @StateObject private var decks = MyDataViewModel()
     
     var body: some View {
-        VStack {
-            List(decks.myDataList) { deck in
-                FlashCardSet(title:  deck.Title).listRowBackground(Color(hex: 0x2E3A31))
-            }
-            .listStyle(PlainListStyle())
+        List(decks.myDataList) { deck in
+            FlashCardSet(title: deck.Title, deckID: deck.id!).listRowBackground(Color(hex: 0x2E3A31))
         }
+        .listStyle(PlainListStyle())
         .onAppear {
             decks.loadData(forUserId: getUserId())
         }
@@ -66,9 +63,10 @@ struct ShowUsersDecks: View {
 // work in progress
 struct FlashCardSet: View {
     let title: String
+    let deckID: String
     
     var body: some View {
-        NavigationLink(destination: TempView()) {
+        NavigationLink(destination: CardsView(deckID: deckID, title: title)) {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color(hex: 0x565656))
