@@ -62,7 +62,7 @@ struct CardsView: View {
             .padding()
         }
         .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
-            EditCardView()
+            EditCardView(deckID: deckID, title: title)
         }
         .background(Color(hex: 0x2E3A31))
         .onAppear(perform: resetCards)
@@ -93,7 +93,6 @@ struct CardsView: View {
             switch result {
             case .success(let data):
                 print("Document data: \(data)")
-                var cards = []
                 // Handle the data here
                 if let questions = data["Questions"] as? [String], let answers = data["Answers"] as? [String] {
                     // Using zip to combine corresponding elements into a list of tuples

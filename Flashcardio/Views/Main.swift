@@ -33,7 +33,6 @@ struct Main: View {
                                         .foregroundColor(Color.white)
                                 }
                 .listRowBackground(Color(hex: 0x2E3A31))
-                .padding(.vertical, 10)
                 ShowUsersDecks()
                 // Add card button
                 AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
@@ -51,12 +50,10 @@ struct ShowUsersDecks: View {
     @StateObject private var decks = MyDataViewModel()
     
     var body: some View {
-        VStack {
-            List(decks.myDataList) { deck in
-                FlashCardSet(title: deck.Title, deckID: deck.id!).listRowBackground(Color(hex: 0x2E3A31))
-            }
-            .listStyle(PlainListStyle())
+        List(decks.myDataList) { deck in
+            FlashCardSet(title: deck.Title, deckID: deck.id!).listRowBackground(Color(hex: 0x2E3A31))
         }
+        .listStyle(PlainListStyle())
         .onAppear {
             decks.loadData(forUserId: getUserId())
         }
