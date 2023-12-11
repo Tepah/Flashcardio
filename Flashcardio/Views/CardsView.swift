@@ -39,7 +39,7 @@ struct CardsView: View {
                 if cards.isEmpty {
                     Button("Reset Cards", action: resetCards)
                         .padding()
-                        .background(Color(hex: 0x565656))
+                        .background(Color(hex: 0x7399a4))
                         .foregroundColor(.white)
                         .shadow(radius: 20)
                         .clipShape(Capsule())
@@ -66,7 +66,6 @@ struct CardsView: View {
         .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
             EditCardView(deckID: deckID, title: title)
         }
-        .background(Color(hex: 0x2E3A31))
         .onAppear(perform: resetCards)
     }
     
