@@ -23,9 +23,37 @@ extension Color {
 }
 
 struct Main: View {
+    @State private var showSettingsScreen = false
+    
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
+                
+                HStack{
+                    Spacer()
+                    Button(action: {
+                        self.showSettingsScreen = true
+                    }) {
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+                                .offset(y: -6)
+
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+                                .offset(y: 6)
+                        }
+                        .padding()
+                    }
+                    .padding()
+                }
                 GeometryReader { geometry in
                                     Text("Flashcardio")
                                         .font(.largeTitle) // Set your desired font size here
@@ -36,12 +64,12 @@ struct Main: View {
                 ShowUsersDecks()
                 // Add card button
                 AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
-                // Temporary log out button lol
-                Button("Logout") {
-                    logoutLogic()
                 }
             }
             .background(Color(hex: 0x2E3A31))
+        }
+        .sheet(isPresented: $showSettingsScreen) {
+            SettingsView()
         }
     }
 }
@@ -117,15 +145,6 @@ struct TempView: View {
         VStack {
             Text("Nothing to see here..")
         }
-    }
-}
-
-func logoutLogic() {
-    do {
-        try Auth.auth().signOut()
-        print("Logged out successfully.")
-    } catch let signOutError as NSError {
-        print("Error signing out: \(signOutError.localizedDescription)")
     }
 }
 
