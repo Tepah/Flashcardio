@@ -21,6 +21,8 @@ struct CardsView: View {
     @State private var showingEditScreen = false
     
     var body: some View {
+        BgView()
+            .overlay(
         ZStack {
             VStack {
                 ZStack {
@@ -58,7 +60,7 @@ struct CardsView: View {
             .foregroundColor(.white)
             .font(.largeTitle)
             .padding()
-        }
+        })
         .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
             EditCardView()
         }

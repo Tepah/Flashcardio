@@ -15,7 +15,14 @@ struct LoginView: View {
     
     var body: some View {
         NavigationView {
+            BgView()
+                .overlay(
             VStack {
+                Text("Flashcardio")
+                    .font(.largeTitle)
+                    //.frame(width: geometry.size.width, height: 20)
+                    .foregroundColor(.white)
+                    .bold()
                 // Username Text Field
                 TextField("Email", text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -30,15 +37,17 @@ struct LoginView: View {
                     loginLogic(email: email, password: password)
                 }
                 .padding()
+                .foregroundColor(.white)
                 
                 HStack {
                     Text("No account?")
                     NavigationLink(destination: SignUpView()){
                         Text("Sign up")
+                            .foregroundColor(.white)
                     }
                 }
-            }
-            .padding()
+            })
+            //.padding()
             .alert(isPresented: $showErrorModal) {
                 Alert(
                     title: Text("Account not found"),
