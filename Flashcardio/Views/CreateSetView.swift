@@ -20,13 +20,15 @@ struct CreateSetView: View {
     
     var body: some View {
         NavigationView {
+            BgView()
+                .overlay(
             VStack {
                 TextField("Title", text: $title)
                     .padding()
                     .multilineTextAlignment(.center)
                     .font(.title)
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(Color(hex: 0x565656))
+                    .fill(Color(hex: 0x80abb7))
                     .frame(width: 340, height: 160)
                     .overlay(
                         TextField("Question", text: $question)
@@ -36,7 +38,7 @@ struct CreateSetView: View {
                             .font(.title)
                     )
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(Color(hex: 0x565656))
+                    .fill(Color(hex: 0x80abb7))
                     .frame(width: 340, height: 160)
                     .overlay(
                         TextField("Answer", text: $answer)
@@ -65,8 +67,8 @@ struct CreateSetView: View {
                 Button("Save") {
                     saveButton()
                 }
-            }
-            .padding()
+            })
+            //.padding()
             .alert(isPresented: $showErrorModal) {
                 Alert(
                     title: Text("Invalid card"),

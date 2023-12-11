@@ -25,24 +25,27 @@ extension Color {
 struct Main: View {
     var body: some View {
         NavigationView {
+            BgView()
+                .overlay(
             VStack {
                 GeometryReader { geometry in
                                     Text("Flashcardio")
                                         .font(.largeTitle) // Set your desired font size here
-                                        .frame(width: geometry.size.width, height: 0)
+                                        .frame(width: geometry.size.width, height: 20)
                                         .foregroundColor(Color.white)
+                                        .bold()
                                 }
-                .listRowBackground(Color(hex: 0x2E3A31))
+                //.listRowBackground(Color(hex: 0x2E3A31))
                 .padding(.vertical, 10)
                 ShowUsersDecks()
                 // Add card button
-                AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
+                AddCard().listRowBackground(Color(hex: 0x2e3a31)).contentShape(Rectangle())
                 // Temporary log out button lol
                 Button("Logout") {
                     logoutLogic()
                 }
-            }
-            .background(Color(hex: 0x2E3A31))
+            })
+            //.background(Color(hex: 0x2E3A31))
         }
     }
 }
