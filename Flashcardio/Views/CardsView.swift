@@ -84,11 +84,6 @@ struct CardsView: View {
     }
     
     func loadData() {
-        //        if let data = UserDefaults.standard.data(forKey: "Cards") {
-        //            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-        //                self.cards = decoded
-        //            }
-        //        }
         getDeckData(deckID: deckID, title: "Deck") { result in
             switch result {
             case .success(let data):

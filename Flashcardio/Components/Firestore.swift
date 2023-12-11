@@ -105,6 +105,17 @@ func getDeckData(deckID: String, title: String, completion: @escaping (Result<[S
    }
 }
 
+func updateDeck(deckID: String, updatedDeck: [AnyHashable: Any]) {
+    let ref = Firestore.firestore().collection("Decks").document(deckID)
+    ref.updateData(updatedDeck) { error in
+        if let error = error {
+            print("Error updating document: \(error.localizedDescription)")
+        } else {
+            print("Document updated successfully!")
+        }
+    }
+}
+
 func getUserId() -> String {
     if let user = Auth.auth().currentUser {
         // User is signed in.

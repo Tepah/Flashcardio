@@ -28,6 +28,7 @@ class EditCardViewModel: ObservableObject {
     }
     
     func loadData() {
+        print(deckID)
         getDeckData(deckID: deckID, title: "Deck") { result in
             switch result {
             case .success(let data):
@@ -50,8 +51,36 @@ class EditCardViewModel: ObservableObject {
     }
     
     func saveData() {
-        if let data = try? JSONEncoder().encode(cards) {
-            UserDefaults.standard.set(data, forKey: "Cards")
+//        if let data = try? JSONEncoder().encode(cards) {
+//            UserDefaults.standard.set(data, forKey: "Cards")
+//        }
+        getDeckData(deckID: deckID, title: "Deck") { result in
+            switch result {
+            case .success(let data):
+                print("Document data: \(data)")
+                // Handle the data here
+                if let questions = data["Questions"] as? [String], let answers = data["Answers"] as? [String] {
+                    // Using zip to combine corresponding elements into a list of tuples
+                    let combinedList = zip(questions, answers).map { (question, answer) in
+                        Card(question: question, answer: answer)
+                    }
+                    var answers = []
+                    var questions = []
+                    for card in self.cards {
+                        questions.append(card.question)
+                        answers.append(card.answer)
+                    }
+                    var newData = data
+                    newData["Questions"] = questions
+                    newData["Answers"] = answers
+                    print(newData)
+    
+                    updateDeck(deckID: self.deckID, updatedDeck: newData)
+                }
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
+                // Handle the error here
+            }
         }
     }
     
