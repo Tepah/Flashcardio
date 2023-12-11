@@ -96,6 +96,10 @@ class EditCardViewModel: ObservableObject {
         cards.remove(atOffsets: offsets)
         saveData()
     }
+    
+    func deleteDeck() {
+        print("Deleting deck with ID: \(deckID)")
+    }
 }
 
 struct EditCardView: View {
@@ -128,6 +132,10 @@ struct EditCardView: View {
                         }
                     }
                     .onDelete(perform: viewModel.removeCards)
+                }
+                Section {
+                    Button("Delete Deck", action: viewModel.deleteDeck)
+                        .foregroundColor(.red)
                 }
             }
             .navigationBarTitle("Edit Cards")
