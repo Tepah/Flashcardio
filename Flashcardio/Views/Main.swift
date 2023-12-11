@@ -21,9 +21,37 @@ extension Color {
 }
 
 struct Main: View {
+    @State private var showSettingsScreen = false
+    
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
+                
+                HStack{
+                    Spacer()
+                    Button(action: {
+                        self.showSettingsScreen = true
+                    }) {
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+                                .offset(y: -6)
+
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+
+                            Rectangle()
+                                .frame(width: 20, height: 3)
+                                .foregroundColor(.white)
+                                .offset(y: 6)
+                        }
+                        .padding()
+                    }
+                    .padding()
+                }
                 // Put cards per card on account here !!!right now placeholder
                 List {
                     GeometryReader { geometry in
@@ -40,14 +68,13 @@ struct Main: View {
                     FlashCardSet(title: "tempoary name 4").listRowBackground(Color(hex: 0x2E3A31))
                     // Add card button
                     AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
-                    // Temporary log out button lol
-                    Button("Logout") {
-                        logoutLogic()
-                    }
                 }
                 .listStyle(PlainListStyle())
             }
             .background(Color(hex: 0x2E3A31))
+        }
+        .sheet(isPresented: $showSettingsScreen) {
+            SettingsView()
         }
     }
 }
@@ -108,15 +135,6 @@ struct TempView: View {
         VStack {
             Text("Nothing to see here..")
         }
-    }
-}
-
-func logoutLogic() {
-    do {
-        try Auth.auth().signOut()
-        print("Logged out successfully.")
-    } catch let signOutError as NSError {
-        print("Error signing out: \(signOutError.localizedDescription)")
     }
 }
 
