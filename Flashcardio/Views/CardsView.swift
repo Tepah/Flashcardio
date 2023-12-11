@@ -93,15 +93,16 @@ struct CardsView: View {
             switch result {
             case .success(let data):
                 print("Document data: \(data)")
+                var cards = []
                 // Handle the data here
                 if let questions = data["Questions"] as? [String], let answers = data["Answers"] as? [String] {
                     // Using zip to combine corresponding elements into a list of tuples
                     let combinedList = zip(questions, answers).map { (question, answer) in
-                        ["question": question, "answer": answer]
+                        Card(question: question, answer: answer)
                     }
 
                     // Printing the resulting list
-                    print(combinedList)
+                    self.cards = combinedList
                 }
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
