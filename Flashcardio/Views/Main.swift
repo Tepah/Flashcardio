@@ -40,11 +40,11 @@ struct Main: View {
                                 .frame(width: 20, height: 3)
                                 .foregroundColor(.white)
                                 .offset(y: -6)
-
+                            
                             Rectangle()
                                 .frame(width: 20, height: 3)
                                 .foregroundColor(.white)
-
+                            
                             Rectangle()
                                 .frame(width: 20, height: 3)
                                 .foregroundColor(.white)
@@ -55,24 +55,25 @@ struct Main: View {
                     .padding()
                 }
                 GeometryReader { geometry in
-                                    Text("Flashcardio")
-                                        .font(.largeTitle) // Set your desired font size here
-                                        .frame(width: geometry.size.width, height: 0)
-                                        .foregroundColor(Color.white)
-                                }
+                    Text("Flashcardio")
+                        .font(.largeTitle) // Set your desired font size here
+                        .frame(width: geometry.size.width, height: 0)
+                        .foregroundColor(Color.white)
+                }
                 .listRowBackground(Color(hex: 0x2E3A31))
                 ShowUsersDecks()
                 // Add card button
                 AddCard().listRowBackground(Color(hex: 0x2E3A31)).contentShape(Rectangle())
-                }
             }
             .background(Color(hex: 0x2E3A31))
-        }
-        .sheet(isPresented: $showSettingsScreen) {
-            SettingsView()
+            .sheet(isPresented: $showSettingsScreen) {
+                SettingsView()
+            }
         }
     }
 }
+
+
 
 struct ShowUsersDecks: View {
     @StateObject private var decks = MyDataViewModel()
