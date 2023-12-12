@@ -19,19 +19,20 @@ struct SettingsView: View {
                     .font(.title)
                     .padding(.vertical, 30)
                 DefinitionFirstSwitch()
-                    .padding(.vertical, 15)
+                    .padding(.vertical, 10)
                 ShuffleButton()
-                    .padding(.vertical, 15)
+                    .padding(.vertical, 10)
                 HStack {
                     Button(action: {
                         logoutLogic()
                     }) {
                         Text("Logout")
-                            .foregroundColor(.red)
-                            .padding(10)
-                            .overlay(RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color.red, lineWidth: 1))
+                            .bold()
                     }
+                    .padding()
+                    .background(Color.red)               .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .bold()
                 }
                 .padding(10)
                 Spacer()
@@ -84,7 +85,7 @@ struct ShuffleButton: View {
                 .font(.title2)
         }
         .onChange(of: isSwitchOn) { newValue in
-                    isDefinitionFirst = newValue
+                    isShuffleOn = newValue
                 }
     }
 }
