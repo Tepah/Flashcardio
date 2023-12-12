@@ -14,23 +14,35 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationView {
-            HStack {
-                Button(action: {
-                    logoutLogic()
-                }) {
-                    Text("Logout")
-                        .foregroundColor(.red)
-                        .padding(10)
-                        .overlay(RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.red, lineWidth: 1))
+            VStack {
+                Text("Settings")
+                    .font(.title)
+                    .padding(.vertical, 30)
+                DefinitionFirstSwitch()
+                    .padding(.vertical, 15)
+                ShuffleButton()
+                    .padding(.vertical, 15)
+                HStack {
+                    Button(action: {
+                        logoutLogic()
+                    }) {
+                        Text("Logout")
+                            .foregroundColor(.red)
+                            .padding(10)
+                            .overlay(RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.red, lineWidth: 1))
+                    }
                 }
+                .padding(10)
+                Spacer()
             }
+            .background(Color(hex: 0x7399a4))
             /*Form {
-                Section(header: Text("Text Settings")) {
-                    Stepper("Font Size: \(Int(appSettings.fontSize))", value: $appSettings.fontSize, in: 12...24)
-                    ColorPicker("Text Color", selection: $appSettings.textColor)
-                }
-            }*/
+             Section(header: Text("Text Settings")) {
+             Stepper("Font Size: \(Int(appSettings.fontSize))", value: $appSettings.fontSize, in: 12...24)
+             ColorPicker("Text Color", selection: $appSettings.textColor)
+             }
+             }*/
         }
     }
     
@@ -41,6 +53,39 @@ struct SettingsView: View {
         } catch let signOutError as NSError {
             print("Error signing out: \(signOutError.localizedDescription)")
         }
+    }
+}
+
+struct DefinitionFirstSwitch: View {
+    @State private var isSwitchOn: Bool = isDefinitionFirst
+    
+    var body: some View {
+        HStack {
+            Toggle("Definition First", isOn: $isSwitchOn)
+                .padding(.horizontal, 40)
+                .padding(.vertical, 10)
+                .font(.title2)
+                .onChange(of: isSwitchOn) { newValue in
+                    isDefinitionFirst = newValue
+                }
+        }
+        
+    }
+}
+
+struct ShuffleButton: View {
+    @State private var isSwitchOn: Bool = isShuffleOn
+    
+    var body: some View {
+        HStack {
+            Toggle("Shuffle deck", isOn: $isSwitchOn)
+                .padding(.horizontal, 40)
+                .padding(.vertical, 10)
+                .font(.title2)
+        }
+        .onChange(of: isSwitchOn) { newValue in
+                    isDefinitionFirst = newValue
+                }
     }
 }
 
