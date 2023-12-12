@@ -8,6 +8,19 @@ import SwiftUI
 import Firebase
 import FirebaseAuth
 
+extension View {
+    func placeholder<Content: View>(
+        when shouldShow: Bool,
+        alignment: Alignment = .leading,
+        @ViewBuilder placeholder: () -> Content) -> some View {
+
+        ZStack(alignment: alignment) {
+            placeholder().opacity(shouldShow ? 1 : 0)
+            self
+        }
+    }
+}
+
 struct CreateSetView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var title: String = ""
@@ -23,7 +36,15 @@ struct CreateSetView: View {
             BgView()
                 .overlay(
             VStack {
-                TextField("Title", text: $title)
+                Spacer()
+                TextField("", text: $title)
+                    .placeholder(when: title.isEmpty) {
+                        HStack {
+                            Spacer()
+                            Text("Title").foregroundColor(.white)
+                            Spacer()
+                        }
+                    }
                     .padding()
                     .multilineTextAlignment(.center)
                     .font(.title)
@@ -32,7 +53,14 @@ struct CreateSetView: View {
                     .fill(Color(hex: 0x7399a4))
                     .frame(width: 340, height: 160)
                     .overlay(
-                        TextField("Question", text: $question)
+                        TextField("", text: $question)
+                            .placeholder(when: question.isEmpty) {
+                                HStack {
+                                    Spacer()
+                                    Text("Question").foregroundColor(.white)
+                                    Spacer()
+                                }
+                            }
                             .padding()
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
@@ -42,7 +70,14 @@ struct CreateSetView: View {
                     .fill(Color(hex: 0x7399a4))
                     .frame(width: 340, height: 160)
                     .overlay(
-                        TextField("Answer", text: $answer)
+                        TextField("", text: $answer)
+                            .placeholder(when: answer.isEmpty) {
+                                HStack {
+                                    Spacer()
+                                    Text("Answer").foregroundColor(.white)
+                                    Spacer()
+                                }
+                            }
                             .padding()
                             .frame(maxWidth: .infinity)
                             .multilineTextAlignment(.center)
@@ -51,23 +86,47 @@ struct CreateSetView: View {
                     )
                 HStack {
                     if page <= 1 {
+                        Spacer()
+                        Text("  ")
+                            .font(.title)
                         Text("\(page)")
+                            .padding(.horizontal, 10)
+                            .foregroundColor(.white)
+                            .font(.title)
                         Button(">") {
                             nextButton()
                         }
+                        .foregroundColor(.white)
+                        .font(.title)
+                        Spacer()
                     } else {
                         Button("<") {
                             backButton()
                         }
+                        .foregroundColor(.white)
+                        .font(.title)
                         Text("\(page)")
+                            .padding(.horizontal, 10)
+                            .foregroundColor(.white)
+                            .font(.title)
                         Button(">") {
                             nextButton()
                         }
+                        .font(.title)
+                        .foregroundColor(.white)
                     }
                 }
+                .padding(.vertical, 10)
+                Spacer()
                 Button("Save") {
                     saveButton()
                 }
+                .padding()
+                .background(Color(hex: 0x7399a4))
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                .bold()
+                
             })
             //.padding()
             .alert(isPresented: $showErrorModal) {
@@ -164,7 +223,9 @@ struct CreateSetView: View {
             answer = newSet[page-1].1
         }
     }
+                        
 }
+
 
 func saveDeck(title: String, deck: [(String, String)]) {
     let inputDeck = checkDeck(deck:deck)

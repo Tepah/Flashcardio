@@ -134,6 +134,7 @@ func deleteDeck(deckID: String) {
     let collectionRef = db.collection("Decks").document(deckID)
     collectionRef.delete { error in
         if let error = error {
+            // Deletes the set but says it doesn't delete
             print("Error deleting deck: \(error.localizedDescription)")
         } else {
             print("Deck deleted successfully")
