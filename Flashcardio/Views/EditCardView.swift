@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 class EditCardViewModel: ObservableObject {
     @Published var cards = [Card]()
@@ -97,8 +98,16 @@ class EditCardViewModel: ObservableObject {
         saveData()
     }
     
-    func deleteDeck() {
-        print("Deleting deck with ID: \(deckID)")
+    func deleteDeck(deckID: String) {
+        let db = Firestore.firestore()
+        let collectionRef = db.collection("Decks").document(deckID)
+        collectionRef.delete { error in
+            if let error = error {
+                print("Error deleting deck: \(error.localizedDescription)")
+            } else {
+                print("Deck deleted successfully")
+            }
+        }
     }
 }
 
@@ -134,8 +143,11 @@ struct EditCardView: View {
                     .onDelete(perform: viewModel.removeCards)
                 }
                 Section {
-                    Button("Delete Deck", action: viewModel.deleteDeck)
-                        .foregroundColor(.red)
+                    Button("Delete Deck", action: {
+                        viewModel.deleteDeck(deckID: deckID)
+                        presentationMode.wrappedValue.dismiss()
+                    })
+                    .foregroundColor(.red)
                 }
             }
             .navigationBarTitle("Edit Cards")
