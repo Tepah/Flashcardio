@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 class EditCardViewModel: ObservableObject {
     @Published var cards = [Card]()
@@ -60,8 +61,7 @@ class EditCardViewModel: ObservableObject {
                 print("Document data: \(data)")
                 // Handle the data here
                 if let questions = data["Questions"] as? [String], let answers = data["Answers"] as? [String] {
-                    // Using zip to combine corresponding elements into a list of tuples
-                    let combinedList = zip(questions, answers).map { (question, answer) in
+                    _ = zip(questions, answers).map { (question, answer) in
                         Card(question: question, answer: answer)
                     }
                     var answers = []
@@ -96,6 +96,8 @@ class EditCardViewModel: ObservableObject {
         cards.remove(atOffsets: offsets)
         saveData()
     }
+    
+    
 }
 
 struct EditCardView: View {
@@ -128,6 +130,13 @@ struct EditCardView: View {
                         }
                     }
                     .onDelete(perform: viewModel.removeCards)
+                }
+                Section {
+                    Button("Delete Deck", action: {
+                        deleteDeck(deckID: deckID)
+                        presentationMode.wrappedValue.dismiss()
+                    })
+                    .foregroundColor(.red)
                 }
             }
             .navigationBarTitle("Edit Cards")

@@ -128,3 +128,15 @@ func getUserId() -> String {
         return ""
     }
 }
+
+func deleteDeck(deckID: String) {
+    let db = Firestore.firestore()
+    let collectionRef = db.collection("Decks").document(deckID)
+    collectionRef.delete { error in
+        if let error = error {
+            print("Error deleting deck: \(error.localizedDescription)")
+        } else {
+            print("Deck deleted successfully")
+        }
+    }
+}
