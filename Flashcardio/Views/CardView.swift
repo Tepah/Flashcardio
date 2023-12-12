@@ -30,11 +30,21 @@ struct CardView: View {
                 )
                 .shadow(radius: 20)
             VStack {
-                if isShowingAnswer {
+                if isShowingAnswer && !isDefinitionFirst {
                     Text(card.answer)
                         .font(.largeTitle)
                         .foregroundColor(.white)
                         .rotationEffect(.degrees(180))
+                        .scaleEffect(x: -1, y: 1)
+                } else if !isShowingAnswer && isDefinitionFirst {
+                    Text(card.answer)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                } else if isShowingAnswer && isDefinitionFirst {
+                    Text(card.question)
+                        .font(.largeTitle)
+                        .rotationEffect(.degrees(180))
+                        .foregroundColor(.white)
                         .scaleEffect(x: -1, y: 1)
                 } else {
                     Text(card.question)

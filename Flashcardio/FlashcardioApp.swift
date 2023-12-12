@@ -9,6 +9,10 @@ import SwiftUI
 import FirebaseCore
 import FirebaseAuth
 
+// Globals
+var isDefinitionFirst = false
+var isShuffleOn = false
+
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication,

@@ -64,7 +64,8 @@ struct Main: View {
             }
             .sheet(isPresented: $showSettingsScreen) {
                 SettingsView()
-            })
+            }
+            )
         }
     }
 }

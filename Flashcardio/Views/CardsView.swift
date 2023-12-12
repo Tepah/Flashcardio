@@ -92,11 +92,13 @@ struct CardsView: View {
                 // Handle the data here
                 if let questions = data["Questions"] as? [String], let answers = data["Answers"] as? [String] {
                     // Using zip to combine corresponding elements into a list of tuples
-                    let combinedList = zip(questions, answers).map { (question, answer) in
+                    var combinedList = zip(questions, answers).map { (question, answer) in
                         Card(question: question, answer: answer)
                     }
-
                     // Printing the resulting list
+                    if isShuffleOn {
+                        combinedList.shuffle()
+                    }
                     self.cards = combinedList
                 }
             case .failure(let error):
