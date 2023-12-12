@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>29E6A759-5976-47C8-A0BF-8724C8A0460A</key>
+		<key>7CEE5D42-E1BF-4E52-97D1-AA251DBF635F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>29E6A759-5976-47C8-A0BF-8724C8A0460A.xcactivitylog</string>
+			<string>7CEE5D42-E1BF-4E52-97D1-AA251DBF635F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -29,7 +29,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>2</integer>
+				<integer>4</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Flashcardio project</string>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Build for Previews Flashcardio</string>
 			<key>timeStartedRecording</key>
-			<real>724031068.76204097</real>
+			<real>724038777.38604903</real>
 			<key>timeStoppedRecording</key>
-			<real>724031081.90031803</real>
+			<real>724038790.63090503</real>
 			<key>title</key>
 			<string>Build for Previews Flashcardio</string>
 			<key>uniqueIdentifier</key>
-			<string>29E6A759-5976-47C8-A0BF-8724C8A0460A</string>
+			<string>7CEE5D42-E1BF-4E52-97D1-AA251DBF635F</string>
 		</dict>
-		<key>60433A78-1DAC-47DA-82DF-C0F3B457D034</key>
+		<key>815A89E5-7105-406D-8693-5829601614A1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>60433A78-1DAC-47DA-82DF-C0F3B457D034.xcactivitylog</string>
+			<string>815A89E5-7105-406D-8693-5829601614A1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -71,7 +71,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>3</integer>
+				<integer>4</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Flashcardio project</string>
@@ -82,15 +82,15 @@
 			<key>signature</key>
 			<string>Build for Previews Flashcardio</string>
 			<key>timeStartedRecording</key>
-			<real>724030056.17170405</real>
+			<real>724037397.56211603</real>
 			<key>timeStoppedRecording</key>
-			<real>724030185.36589706</real>
+			<real>724037422.84795201</real>
 			<key>title</key>
 			<string>Build for Previews Flashcardio</string>
 			<key>uniqueIdentifier</key>
-			<string>60433A78-1DAC-47DA-82DF-C0F3B457D034</string>
+			<string>815A89E5-7105-406D-8693-5829601614A1</string>
 		</dict>
-		<key>627386CC-3FA6-4107-BCBC-537F6A3C561A</key>
+		<key>CDB090D3-FA3A-4F49-B16D-19EDFA6F47C2</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -99,7 +99,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>627386CC-3FA6-4107-BCBC-537F6A3C561A.xcactivitylog</string>
+			<string>CDB090D3-FA3A-4F49-B16D-19EDFA6F47C2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -113,7 +113,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>2</integer>
+				<integer>4</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Flashcardio project</string>
@@ -124,15 +124,15 @@
 			<key>signature</key>
 			<string>Build for Previews Flashcardio</string>
 			<key>timeStartedRecording</key>
-			<real>724028817.03066599</real>
+			<real>724039173.19912803</real>
 			<key>timeStoppedRecording</key>
-			<real>724028916.23018503</real>
+			<real>724039183.60254002</real>
 			<key>title</key>
 			<string>Build for Previews Flashcardio</string>
 			<key>uniqueIdentifier</key>
-			<string>627386CC-3FA6-4107-BCBC-537F6A3C561A</string>
+			<string>CDB090D3-FA3A-4F49-B16D-19EDFA6F47C2</string>
 		</dict>
-		<key>7F01F5D7-90EB-4C65-92E9-61E3CD18E928</key>
+		<key>E5FF8065-FAD3-4307-A7E9-DBD0FC529097</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -141,21 +141,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>7F01F5D7-90EB-4C65-92E9-61E3CD18E928.xcactivitylog</string>
+			<string>E5FF8065-FAD3-4307-A7E9-DBD0FC529097.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>105</integer>
+				<integer>0</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>4</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Flashcardio project</string>
@@ -166,97 +166,13 @@
 			<key>signature</key>
 			<string>Build for Previews Flashcardio</string>
 			<key>timeStartedRecording</key>
-			<real>724031604.40648603</real>
+			<real>724037660.82613301</real>
 			<key>timeStoppedRecording</key>
-			<real>724031615.78972995</real>
+			<real>724037665.80119503</real>
 			<key>title</key>
 			<string>Build for Previews Flashcardio</string>
 			<key>uniqueIdentifier</key>
-			<string>7F01F5D7-90EB-4C65-92E9-61E3CD18E928</string>
-		</dict>
-		<key>8F9BA6BA-09FE-4CC4-91AD-987E901FBFF6</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8F9BA6BA-09FE-4CC4-91AD-987E901FBFF6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>105</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Flashcardio project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Flashcardio</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Flashcardio</string>
-			<key>timeStartedRecording</key>
-			<real>724031550.07955205</real>
-			<key>timeStoppedRecording</key>
-			<real>724031599.42036498</real>
-			<key>title</key>
-			<string>Build for Previews Flashcardio</string>
-			<key>uniqueIdentifier</key>
-			<string>8F9BA6BA-09FE-4CC4-91AD-987E901FBFF6</string>
-		</dict>
-		<key>FE2236CB-B445-4FD4-9711-11952A4155D9</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FE2236CB-B445-4FD4-9711-11952A4155D9.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>105</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Flashcardio project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Flashcardio</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Flashcardio</string>
-			<key>timeStartedRecording</key>
-			<real>724031201.29965305</real>
-			<key>timeStoppedRecording</key>
-			<real>724031252.07162499</real>
-			<key>title</key>
-			<string>Build for Previews Flashcardio</string>
-			<key>uniqueIdentifier</key>
-			<string>FE2236CB-B445-4FD4-9711-11952A4155D9</string>
+			<string>E5FF8065-FAD3-4307-A7E9-DBD0FC529097</string>
 		</dict>
 	</dict>
 </dict>

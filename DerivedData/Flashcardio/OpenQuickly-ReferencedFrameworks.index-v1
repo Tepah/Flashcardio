@@ -3,8 +3,8 @@
 <plist version="1.0">
 <array>
 	<string>FirebaseFirestoreTestingSupport</string>
-	<string>Flashcardio</string>
 	<string>FBSDKCoreKit</string>
+	<string>Flashcardio</string>
 	<string>doesn</string>
 	<string>RecaptchaInterop</string>
 	<string>FirebaseSessionsObjC</string>
@@ -16,9 +16,9 @@
 	<string>FirebaseCombineSwift</string>
 	<string>EarlGrey</string>
 	<string>FirebaseMLModelDownloader</string>
-	<string>FirebaseFirestoreInternalWrapper</string>
-	<string>FirebaseDynamicLinks</string>
 	<string>paths</string>
+	<string>FirebaseDynamicLinks</string>
+	<string>FirebaseFirestoreInternalWrapper</string>
 	<string>GCDWebServer</string>
 	<string>FirebaseStorage</string>
 	<string>StoreKit</string>
@@ -71,10 +71,10 @@
 	<string>SharedTestUtilities</string>
 	<string>FirebaseInstallations</string>
 	<string>GTMSessionFetcher</string>
-	<string>GoogleSignIn</string>
+	<string>FBSDKLoginKit</string>
 	<string>Photos</string>
 	<string>AppKit</string>
-	<string>FBSDKLoginKit</string>
+	<string>GoogleSignIn</string>
 	<string>UserNotifications</string>
 	<string>FirebaseFirestoreCombineSwift</string>
 	<string>FirebaseInAppMessaging</string>
@@ -94,9 +94,9 @@
 	<string>CoreServices</string>
 	<string>Combine</string>
 	<string>Remote</string>
+	<string>XcodeProjectPlugin</string>
 	<string>FirebaseCrashlytics</string>
 	<string>PackageDescription</string>
-	<string>XcodeProjectPlugin</string>
 	<string>PromisesTestHelpers</string>
 	<string>GTMSessionFetcherCore</string>
 	<string>FirebaseInAppMessagingSwift</string>
@@ -115,10 +115,10 @@
 	<string>sys</string>
 	<string>DeviceCheck</string>
 	<string>Cocoa</string>
-	<string>Darwin</string>
 	<string>public</string>
 	<string>FirebaseDatabaseInternal</string>
 	<string>Framework</string>
+	<string>Darwin</string>
 	<string>FirebaseABTesting</string>
 	<string>GoogleUtilities</string>
 	<string>Foundation</string>
