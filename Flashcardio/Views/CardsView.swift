@@ -113,7 +113,7 @@ struct DefaultButton: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding()
-            .background(Color(hex: 0x565656))
+            .background(Color(hex: 0x7399a4))
             .clipShape(Circle())
             .shadow(radius: 20)
     }
@@ -127,6 +127,6 @@ extension View {
 
 struct CardsView_Previews: PreviewProvider {
     static var previews: some View {
-        CardsView(deckID: "", title: "Hello")
+        CardsView(deckID: "rsNUTINh5BfemlS5iE7Y", title: "Hello")
     }
 }

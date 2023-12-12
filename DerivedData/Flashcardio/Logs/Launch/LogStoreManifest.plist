@@ -6,14 +6,14 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>252DAE9C-EBB9-490D-BDCE-2C95934A2808</key>
+		<key>7FCE70E9-D663-4138-9A36-400A065CADB8</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>A2CD91AC-90AC-4FCE-A245-5C1FD9EC2D05</string>
+			<string>7BF1ED45-32B0-4490-95D2-5CFFD3E16B47</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -21,7 +21,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>7</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Flashcardio-2023.12.04_08-30-44--0800.xcresult</string>
+			<string>Run-Flashcardio-2023.12.11_17-04-09--0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -40,7 +40,7 @@
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -48,7 +48,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Flashcardio project</string>
@@ -59,13 +59,13 @@
 			<key>signature</key>
 			<string>Run Flashcardio</string>
 			<key>timeStartedRecording</key>
-			<real>723400244.55844903</real>
+			<real>724035849.12022197</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Flashcardio</string>
 			<key>uniqueIdentifier</key>
-			<string>252DAE9C-EBB9-490D-BDCE-2C95934A2808</string>
+			<string>7FCE70E9-D663-4138-9A36-400A065CADB8</string>
 		</dict>
 	</dict>
 </dict>

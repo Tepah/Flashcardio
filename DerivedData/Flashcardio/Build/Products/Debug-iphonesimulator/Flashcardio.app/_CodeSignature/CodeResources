@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>GoogleService-Info.plist</key>
+		<data>
+		1wRejrywWH5Y96dIYJjsKlGqWF4=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		VPmpKcumZuww1xoDcTR4tmN7e3Y=
@@ -14,7 +18,15 @@
 		</data>
 	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>GoogleService-Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Da7STmV1GQxlBlTjdEwXnOZx8gwVDGaLSfsVLYv+Dp8=
+			</data>
+		</dict>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^.*</key>

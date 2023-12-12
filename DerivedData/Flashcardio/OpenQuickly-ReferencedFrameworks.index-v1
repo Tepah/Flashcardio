@@ -34,15 +34,15 @@
 	<string>SwiftProtobuf</string>
 	<string>MetricKit</string>
 	<string>FirebaseCore</string>
-	<string>SwiftUI</string>
 	<string>a</string>
+	<string>unicode</string>
 	<string>FirebaseCoreExtension</string>
 	<string>Firebase</string>
 	<string>FirebaseFunctions</string>
 	<string>GameKit</string>
 	<string>FirebaseSessions</string>
 	<string>AuthenticationServices</string>
-	<string>unicode</string>
+	<string>SwiftUI</string>
 	<string>FirebaseAuthInterop</string>
 	<string>FirebaseFunctionsCombineSwift</string>
 	<string>RemoteConfigFakeConsoleObjC</string>
@@ -60,21 +60,21 @@
 	<string>GTMSessionFetcherLogView</string>
 	<string>GTMSessionFetcherFull</string>
 	<string>FirebaseFirestoreSwift</string>
-	<string>ClockKit</string>
 	<string>objc</string>
 	<string>FirebaseAnalyticsSwift</string>
+	<string>ClockKit</string>
 	<string>FirebaseMessaging</string>
 	<string>MobileCoreServices</string>
 	<string>GoogleUtilitiesComponents</string>
 	<string>WatchKit</string>
 	<string>netinet</string>
 	<string>SharedTestUtilities</string>
-	<string>GTMSessionFetcher</string>
-	<string>GoogleSignIn</string>
 	<string>FirebaseInstallations</string>
+	<string>GTMSessionFetcher</string>
 	<string>FBSDKLoginKit</string>
-	<string>AppKit</string>
 	<string>Photos</string>
+	<string>AppKit</string>
+	<string>GoogleSignIn</string>
 	<string>UserNotifications</string>
 	<string>FirebaseFirestoreCombineSwift</string>
 	<string>FirebaseInAppMessaging</string>
@@ -94,9 +94,9 @@
 	<string>CoreServices</string>
 	<string>Combine</string>
 	<string>Remote</string>
+	<string>XcodeProjectPlugin</string>
 	<string>FirebaseCrashlytics</string>
 	<string>PackageDescription</string>
-	<string>XcodeProjectPlugin</string>
 	<string>PromisesTestHelpers</string>
 	<string>GTMSessionFetcherCore</string>
 	<string>FirebaseInAppMessagingSwift</string>
@@ -115,10 +115,10 @@
 	<string>sys</string>
 	<string>DeviceCheck</string>
 	<string>Cocoa</string>
-	<string>Darwin</string>
 	<string>public</string>
 	<string>FirebaseDatabaseInternal</string>
 	<string>Framework</string>
+	<string>Darwin</string>
 	<string>FirebaseABTesting</string>
 	<string>GoogleUtilities</string>
 	<string>Foundation</string>
