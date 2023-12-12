@@ -61,8 +61,7 @@ class EditCardViewModel: ObservableObject {
                 print("Document data: \(data)")
                 // Handle the data here
                 if let questions = data["Questions"] as? [String], let answers = data["Answers"] as? [String] {
-                    // Using zip to combine corresponding elements into a list of tuples
-                    let combinedList = zip(questions, answers).map { (question, answer) in
+                    _ = zip(questions, answers).map { (question, answer) in
                         Card(question: question, answer: answer)
                     }
                     var answers = []
@@ -98,17 +97,7 @@ class EditCardViewModel: ObservableObject {
         saveData()
     }
     
-    func deleteDeck(deckID: String) {
-        let db = Firestore.firestore()
-        let collectionRef = db.collection("Decks").document(deckID)
-        collectionRef.delete { error in
-            if let error = error {
-                print("Error deleting deck: \(error.localizedDescription)")
-            } else {
-                print("Deck deleted successfully")
-            }
-        }
-    }
+    
 }
 
 struct EditCardView: View {
@@ -144,7 +133,7 @@ struct EditCardView: View {
                 }
                 Section {
                     Button("Delete Deck", action: {
-                        viewModel.deleteDeck(deckID: deckID)
+                        deleteDeck(deckID: deckID)
                         presentationMode.wrappedValue.dismiss()
                     })
                     .foregroundColor(.red)
